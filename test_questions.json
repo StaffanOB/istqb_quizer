@@ -1,52 +1,57 @@
 [
   {
-    "question": "Which of the following is a major task of test planning?",
+    "question": "Which of the following is a characteristic of system testing?",
     "alternatives": {
-      "A": "Initiating corrective actions",
-      "B": "Monitoring progress and test coverage",
-      "C": "Scheduling test analysis and design tasks",
-      "D": "Measuring and analyzing results"
+      "A": "Testing individual software modules.",
+      "B": "Testing performed by end users.",
+      "C": "Testing the interactions between integrated components.",
+      "D": "Testing the entire system as a whole."
     },
-    "correct_answer": "C"
+    "correct_answer": "D",
+    "explanation": "System testing evaluates the system as a complete and integrated product to verify that it meets the specified requirements."
   },
   {
-    "question": "Which of the following factors is NOT relevant for test estimation during initial test planning?",
+    "question": "What is the main purpose of acceptance testing?",
     "alternatives": {
-      "A": "The complexity and size of the software under test",
-      "B": "The availability and skills of the test team members",
-      "C": "The quality and reliability of the test tools and environment",
-      "D": "The number and severity of the defects found during testing"
+      "A": "To verify that individual units work correctly.",
+      "B": "To ensure that the system is acceptable to users and meets business needs.",
+      "C": "To ensure that the system components integrate correctly.",
+      "D": "To test non-functional aspects like performance and usability."
     },
-    "correct_answer": "D"
+    "correct_answer": "B",
+    "explanation": "Acceptance testing is performed to determine whether the system satisfies the acceptance criteria and is ready for delivery to the customer or user."
   },
   {
-    "question": "Which of the following is NOT decided in the test-planning phase?",
+    "question": "Integration testing is primarily focused on:",
     "alternatives": {
-      "A": "Schedules and deliverables",
-      "B": "Hardware and software",
-      "C": "Entry and exit criteria",
-      "D": "Types of test cases"
+      "A": "Finding performance bottlenecks.",
+      "B": "Testing how modules or components work together.",
+      "C": "Validating business workflows with real data.",
+      "D": "Verifying compliance with regulatory requirements."
     },
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "explanation": "Integration testing aims to detect interface defects between modules or components by verifying their interactions."
   },
   {
-    "question": "Designing and prioritizing high-level test cases occurs during which activity in the fundamental test process?",
+    "question": "Which test level focuses on the internal structure of a system or component?",
     "alternatives": {
-      "A": "Test planning",
-      "B": "Test analysis and design",
-      "C": "Test implementation and execution",
-      "D": "Test closure activities"
+      "A": "System testing",
+      "B": "Acceptance testing",
+      "C": "Unit testing",
+      "D": "Integration testing"
     },
-    "correct_answer": "B"
+    "correct_answer": "C",
+    "explanation": "Unit testing focuses on verifying the smallest testable parts of an application, typically using white-box techniques to assess internal logic."
   },
   {
-    "question": "Which of the following is a typical test objective?",
+    "question": "Which of the following is a non-functional test type?",
     "alternatives": {
-      "A": "Preventing defects",
-      "B": "Debugging the code",
-      "C": "Writing test scripts",
-      "D": "Analyzing the root cause of defects"
+      "A": "Usability testing",
+      "B": "Regression testing",
+      "C": "Component testing",
+      "D": "User acceptance testing"
     },
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "explanation": "Usability testing is a non-functional test type that evaluates how user-friendly, intuitive, and accessible the software is."
   }
 ]
