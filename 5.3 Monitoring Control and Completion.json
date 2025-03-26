@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Which of the following is a key activity of test monitoring?",
+    "alternatives": {
+      "A": "Analyzing root causes of defects",
+      "B": "Measuring test progress against the plan",
+      "C": "Designing new test cases",
+      "D": "Updating the risk assessment"
+    },
+    "correct_answer": "B",
+    "explanation": "Test monitoring involves measuring actual progress against the planned progress and reporting deviations."
+  },
+  {
+    "question": "What is the purpose of test control?",
+    "alternatives": {
+      "A": "To define test cases and scripts",
+      "B": "To track defects in the system",
+      "C": "To take corrective actions when test progress deviates from the plan",
+      "D": "To write a final test summary report"
+    },
+    "correct_answer": "C",
+    "explanation": "Test control is the activity of taking corrective actions to bring testing back in line with the plan."
+  },
+  {
+    "question": "Which of the following is NOT a typical test control activity?",
+    "alternatives": {
+      "A": "Revising the test schedule",
+      "B": "Prioritizing test execution based on risk",
+      "C": "Measuring test progress",
+      "D": "Writing automated test scripts"
+    },
+    "correct_answer": "D",
+    "explanation": "Writing automated test scripts is a test implementation activity, not test control."
+  },
+  {
+    "question": "Test completion activities include all of the following EXCEPT:",
+    "alternatives": {
+      "A": "Archiving testware and results",
+      "B": "Analyzing lessons learned",
+      "C": "Logging new defects found",
+      "D": "Finalizing and closing incident reports"
+    },
+    "correct_answer": "C",
+    "explanation": "Logging new defects is part of test execution, not a test completion activity."
+  },
+  {
+    "question": "Which document typically summarizes the results of the testing effort?",
+    "alternatives": {
+      "A": "Test design specification",
+      "B": "Test plan",
+      "C": "Test summary report",
+      "D": "Incident report"
+    },
+    "correct_answer": "C",
+    "explanation": "The test summary report summarizes testing activities and results, including deviations and residual risks."
+  },
+  {
+    "question": "Which of the following would most likely trigger test control actions?",
+    "alternatives": {
+      "A": "Test environment is stable",
+      "B": "All test cases passed as expected",
+      "C": "The number of defects found exceeds expectations",
+      "D": "Test summary report has been written"
+    },
+    "correct_answer": "C",
+    "explanation": "If defect counts exceed expectations, corrective actions may be required—this is a test control trigger."
+  },
+  {
+    "question": "What is one of the final tasks during test completion?",
+    "alternatives": {
+      "A": "Designing test data",
+      "B": "Creating test environments",
+      "C": "Archiving testware",
+      "D": "Executing regression tests"
+    },
+    "correct_answer": "C",
+    "explanation": "Testware, such as test cases and logs, should be archived for future reference during test completion."
+  },
+  {
+    "question": "What is a typical deliverable of the test completion phase?",
+    "alternatives": {
+      "A": "A defect report",
+      "B": "A revised risk assessment",
+      "C": "A test summary report",
+      "D": "A new test plan"
+    },
+    "correct_answer": "C",
+    "explanation": "The test summary report is a key deliverable produced during test completion."
+  },
+  {
+    "question": "Test monitoring typically involves tracking which of the following?",
+    "alternatives": {
+      "A": "Planned vs. actual test progress",
+      "B": "Programming productivity",
+      "C": "System resource consumption",
+      "D": "Stakeholder satisfaction"
+    },
+    "correct_answer": "A",
+    "explanation": "Test monitoring tracks planned vs. actual testing activities, such as coverage and progress."
+  },
+  {
+    "question": "Which metric is most useful during test monitoring?",
+    "alternatives": {
+      "A": "Code churn rate",
+      "B": "Number of incident reports closed",
+      "C": "Number of use cases created",
+      "D": "Number of commits to the repository"
+    },
+    "correct_answer": "B",
+    "explanation": "Closed incident reports indicate progress in defect resolution and are useful in test monitoring."
+  },
+  {
+    "question": "During test control, what might be modified if testing falls behind schedule?",
+    "alternatives": {
+      "A": "The system requirements",
+      "B": "The stakeholder contract",
+      "C": "The test environment setup",
+      "D": "The test plan"
+    },
+    "correct_answer": "D",
+    "explanation": "The test plan is updated to reflect revised schedules, scope, or priorities as part of test control."
+  },
+  {
+    "question": "Why is it important to perform a retrospective or lessons-learned session during test completion?",
+    "alternatives": {
+      "A": "To document new requirements",
+      "B": "To improve future test projects",
+      "C": "To automate test cases",
+      "D": "To validate defects"
+    },
+    "correct_answer": "B",
+    "explanation": "Retrospectives help identify successes and improvement areas to enhance future testing efforts."
+  },
+  {
+    "question": "What activity during test completion supports future test planning?",
+    "alternatives": {
+      "A": "Defect triage",
+      "B": "Metrics collection and analysis",
+      "C": "Test design review",
+      "D": "Code walkthrough"
+    },
+    "correct_answer": "B",
+    "explanation": "Collected metrics during test completion provide valuable insights for planning future test efforts."
+  },
+  {
+    "question": "What should be done with unresolved defects during test completion?",
+    "alternatives": {
+      "A": "Archived without mention",
+      "B": "Deleted to reduce clutter",
+      "C": "Communicated as part of residual risk",
+      "D": "Automatically rejected"
+    },
+    "correct_answer": "C",
+    "explanation": "Unresolved defects should be documented as residual risks and communicated to stakeholders."
+  },
+  {
+    "question": "Which of the following actions is part of test control?",
+    "alternatives": {
+      "A": "Reallocating test resources to critical areas",
+      "B": "Designing exploratory tests",
+      "C": "Running static code analysis",
+      "D": "Writing detailed test procedures"
+    },
+    "correct_answer": "A",
+    "explanation": "Test control includes making adjustments like reallocating test resources to keep testing on track."
+  }
+]

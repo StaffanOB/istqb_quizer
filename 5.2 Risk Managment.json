@@ -1,0 +1,167 @@
+[
+  {
+    "question": "What is the primary purpose of risk-based testing?",
+    "alternatives": {
+      "A": "To test only low-priority features",
+      "B": "To prioritize testing based on risk levels",
+      "C": "To eliminate all defects before release",
+      "D": "To test code coverage thoroughly"
+    },
+    "correct_answer": "B",
+    "explanation": "Risk-based testing prioritizes test activities based on the likelihood and impact of potential failures."
+  },
+  {
+    "question": "Which of the following best describes a product risk?",
+    "alternatives": {
+      "A": "A risk related to a delay in the test schedule",
+      "B": "A risk that testing may miss a critical defect",
+      "C": "A risk related to a defect in the delivered software",
+      "D": "A risk that the test environment is unstable"
+    },
+    "correct_answer": "C",
+    "explanation": "Product risks are related to potential defects in the software product that could affect its quality or functionality."
+  },
+  {
+    "question": "Which of the following is a project risk?",
+    "alternatives": {
+      "A": "The software fails under high load",
+      "B": "Developers introduce a critical bug",
+      "C": "Testers are not available due to illness",
+      "D": "Incorrect implementation of a requirement"
+    },
+    "correct_answer": "C",
+    "explanation": "Project risks are related to the management and execution of the project, such as resource availability."
+  },
+  {
+    "question": "What are the two components of risk?",
+    "alternatives": {
+      "A": "Likelihood and defect count",
+      "B": "Severity and priority",
+      "C": "Likelihood and impact",
+      "D": "Cause and failure"
+    },
+    "correct_answer": "C",
+    "explanation": "Risk is typically assessed by considering the likelihood of an event and its potential impact."
+  },
+  {
+    "question": "When should risk analysis be performed?",
+    "alternatives": {
+      "A": "Only at the beginning of the project",
+      "B": "During test execution",
+      "C": "Continuously throughout the project",
+      "D": "After test closure"
+    },
+    "correct_answer": "C",
+    "explanation": "Risk analysis should be a continuous activity, updated as the project progresses and new risks emerge."
+  },
+  {
+    "question": "Which of the following is a benefit of risk-based testing?",
+    "alternatives": {
+      "A": "Guarantees defect-free software",
+      "B": "Reduces test execution effort to zero",
+      "C": "Ensures all tests are automated",
+      "D": "Helps focus testing efforts where they matter most"
+    },
+    "correct_answer": "D",
+    "explanation": "Risk-based testing improves efficiency by focusing efforts on the most critical and likely risk areas."
+  },
+  {
+    "question": "Which risk response involves reducing the likelihood or impact of a risk?",
+    "alternatives": {
+      "A": "Risk acceptance",
+      "B": "Risk mitigation",
+      "C": "Risk transfer",
+      "D": "Risk avoidance"
+    },
+    "correct_answer": "B",
+    "explanation": "Risk mitigation means taking steps to reduce either the likelihood or impact of a risk event."
+  },
+  {
+    "question": "Transferring a risk typically means:",
+    "alternatives": {
+      "A": "Avoiding the risk completely",
+      "B": "Ignoring the risk until it happens",
+      "C": "Shifting the risk to another party (e.g., insurance)",
+      "D": "Reducing the risk’s probability"
+    },
+    "correct_answer": "C",
+    "explanation": "Risk transfer shifts the responsibility for handling a risk to a third party, such as via contracts or insurance."
+  },
+  {
+    "question": "What is a residual risk?",
+    "alternatives": {
+      "A": "A risk that is no longer relevant",
+      "B": "A risk introduced by risk analysis",
+      "C": "A risk that remains after mitigation actions",
+      "D": "A newly discovered risk"
+    },
+    "correct_answer": "C",
+    "explanation": "Residual risks are those that still remain even after risk mitigation has been applied."
+  },
+  {
+    "question": "Which document is most likely to contain risk-based testing strategies?",
+    "alternatives": {
+      "A": "Test completion report",
+      "B": "Risk log",
+      "C": "Test plan",
+      "D": "Incident report"
+    },
+    "correct_answer": "C",
+    "explanation": "The test plan outlines the test approach and strategies, including how risks will be handled."
+  },
+  {
+    "question": "Which of the following is a technique used to identify risks?",
+    "alternatives": {
+      "A": "Boundary value analysis",
+      "B": "Checklist-based approach",
+      "C": "Regression testing",
+      "D": "Statement coverage"
+    },
+    "correct_answer": "B",
+    "explanation": "Checklists are commonly used to systematically identify potential risks based on experience and prior projects."
+  },
+  {
+    "question": "A risk-based approach to testing typically results in:",
+    "alternatives": {
+      "A": "More evenly distributed testing effort",
+      "B": "Higher test automation coverage",
+      "C": "More testing focused on high-risk areas",
+      "D": "Fewer defects reported"
+    },
+    "correct_answer": "C",
+    "explanation": "In risk-based testing, more effort is directed to parts of the system with higher business or technical risk."
+  },
+  {
+    "question": "Which of the following best defines risk?",
+    "alternatives": {
+      "A": "The number of defects found in testing",
+      "B": "The probability that the software will be accepted",
+      "C": "The possibility of an event that will have a negative impact",
+      "D": "The chance that users will be unhappy"
+    },
+    "correct_answer": "C",
+    "explanation": "Risk is defined as the chance of an undesirable event that may impact project or product outcomes."
+  },
+  {
+    "question": "Risk assessment is used to:",
+    "alternatives": {
+      "A": "Replace the need for test planning",
+      "B": "Prioritize the order in which test cases are executed",
+      "C": "Identify defects before testing",
+      "D": "Determine which testers to assign to tasks"
+    },
+    "correct_answer": "B",
+    "explanation": "Risk assessment helps prioritize test execution by identifying which test areas carry the highest risks."
+  },
+  {
+    "question": "Which of the following is an example of a mitigation strategy?",
+    "alternatives": {
+      "A": "Outsourcing all testing to reduce cost",
+      "B": "Adding extra testers to ensure deadline is met",
+      "C": "Delaying release by 6 months",
+      "D": "Cancelling the project"
+    },
+    "correct_answer": "B",
+    "explanation": "Adding extra testers can help reduce the impact of a risk such as schedule slippage, making it a mitigation strategy."
+  }
+]
