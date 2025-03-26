@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Which of the following is a major task of test planning?",
+    "alternatives": {
+      "A": "Initiating corrective actions",
+      "B": "Monitoring progress and test coverage",
+      "C": "Scheduling test analysis and design tasks",
+      "D": "Measuring and analyzing results"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question": "Which of the following factors is NOT relevant for test estimation during initial test planning?",
+    "alternatives": {
+      "A": "The complexity and size of the software under test",
+      "B": "The availability and skills of the test team members",
+      "C": "The quality and reliability of the test tools and environment",
+      "D": "The number and severity of the defects found during testing"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question": "Which of the following is NOT decided in the test-planning phase?",
+    "alternatives": {
+      "A": "Schedules and deliverables",
+      "B": "Hardware and software",
+      "C": "Entry and exit criteria",
+      "D": "Types of test cases"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question": "Designing and prioritizing high-level test cases occurs during which activity in the fundamental test process?",
+    "alternatives": {
+      "A": "Test planning",
+      "B": "Test analysis and design",
+      "C": "Test implementation and execution",
+      "D": "Test closure activities"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question": "Which of the following is a typical test objective?",
+    "alternatives": {
+      "A": "Preventing defects",
+      "B": "Debugging the code",
+      "C": "Writing test scripts",
+      "D": "Analyzing the root cause of defects"
+    },
+    "correct_answer": "A"
+  }
+]
