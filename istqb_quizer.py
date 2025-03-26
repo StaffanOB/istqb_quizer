@@ -15,7 +15,10 @@ def clear_screen():
     os.system("cls" if platform.system() == "Windows" else "clear")
 
 def list_json_files(directory):
-    return [f for f in os.listdir(directory) if f.endswith(".json")]
+    dirFiles = os.listdir(directory)
+    dirFiles.sort()
+    sorted(dirFiles)
+    return [f for f in dirFiles if f.endswith(".json")]
 
 def load_questions(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
