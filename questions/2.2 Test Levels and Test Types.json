@@ -148,5 +148,170 @@
       "D": "Testing based on user stories and acceptance criteria."
     },
     "correct_answer": "B"
+  },
+  {
+    "question": "Which test level is primarily focused on verifying that individual components work as specified?",
+    "alternatives": {
+      "A": "System Testing",
+      "B": "Integration Testing",
+      "C": "Unit Testing",
+      "D": "Acceptance Testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Unit Testing focuses on testing individual components or modules in isolation to ensure they function as intended."
+  },
+  {
+    "question": "What is the main objective of Integration Testing?",
+    "alternatives": {
+      "A": "To validate the system against user requirements",
+      "B": "To test the interactions between integrated components or systems",
+      "C": "To assess the performance under load",
+      "D": "To verify the correctness of individual modules"
+    },
+    "correct_answer": "B",
+    "explanation": "Integration Testing aims to detect issues in the interactions between integrated components or systems."
+  },
+  {
+    "question": "Which test type is concerned with evaluating a system's compliance with specified performance requirements?",
+    "alternatives": {
+      "A": "Functional Testing",
+      "B": "Usability Testing",
+      "C": "Performance Testing",
+      "D": "Regression Testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Performance Testing assesses how well a system performs under specific conditions, such as load and stress."
+  },
+  {
+    "question": "During which test level is the system validated against business and user requirements?",
+    "alternatives": {
+      "A": "Unit Testing",
+      "B": "Integration Testing",
+      "C": "System Testing",
+      "D": "Acceptance Testing"
+    },
+    "correct_answer": "D",
+    "explanation": "Acceptance Testing evaluates the system's compliance with business and user requirements to determine if it is ready for deployment."
+  },
+  {
+    "question": "Which test type focuses on verifying the system's user interface and ease of use?",
+    "alternatives": {
+      "A": "Security Testing",
+      "B": "Usability Testing",
+      "C": "Performance Testing",
+      "D": "Functional Testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Usability Testing assesses how user-friendly and intuitive the system's interface is for end-users."
+  },
+  {
+    "question": "What is the primary goal of Regression Testing?",
+    "alternatives": {
+      "A": "To test the system's performance under load",
+      "B": "To ensure new code changes have not adversely affected existing functionality",
+      "C": "To validate the system against user requirements",
+      "D": "To test individual components in isolation"
+    },
+    "correct_answer": "B",
+    "explanation": "Regression Testing ensures that recent code changes have not introduced new defects into existing functionality."
+  },
+  {
+    "question": "Which test level involves testing the complete integrated system to verify that it meets specified requirements?",
+    "alternatives": {
+      "A": "Unit Testing",
+      "B": "Integration Testing",
+      "C": "System Testing",
+      "D": "Acceptance Testing"
+    },
+    "correct_answer": "C",
+    "explanation": "System Testing involves testing the complete integrated system to ensure it meets the specified requirements."
+  },
+  {
+    "question": "Which test type is aimed at identifying vulnerabilities and weaknesses in a system's security mechanisms?",
+    "alternatives": {
+      "A": "Performance Testing",
+      "B": "Usability Testing",
+      "C": "Security Testing",
+      "D": "Regression Testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Security Testing focuses on identifying vulnerabilities and ensuring that the system's data and resources are protected from threats."
+  },
+  {
+    "question": "At which test level are interfaces between components tested?",
+    "alternatives": {
+      "A": "Unit Testing",
+      "B": "Integration Testing",
+      "C": "System Testing",
+      "D": "Acceptance Testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Integration Testing focuses on testing the interfaces and interactions between integrated components or systems."
+  },
+  {
+    "question": "Which test type evaluates the system's ability to recover from failures?",
+    "alternatives": {
+      "A": "Load Testing",
+      "B": "Recovery Testing",
+      "C": "Stress Testing",
+      "D": "Usability Testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Recovery Testing assesses how well a system can recover from crashes, hardware failures, or other catastrophic problems."
+  },
+  {
+    "question": "Which test level is typically performed by end-users to validate the system's functionality?",
+    "alternatives": {
+      "A": "Unit Testing",
+      "B": "Integration Testing",
+      "C": "System Testing",
+      "D": "Acceptance Testing"
+    },
+    "correct_answer": "D",
+    "explanation": "Acceptance Testing is usually conducted by end-users to validate that the system meets their requirements and is ready for production."
+  },
+  {
+    "question": "What is the purpose of Load Testing?",
+    "alternatives": {
+      "A": "To determine the system's behavior under both normal and anticipated peak load conditions",
+      "B": "To evaluate the system's usability",
+      "C": "To verify the system's compliance with security standards",
+      "D": "To ensure that new code changes do not introduce new defects"
+    },
+    "correct_answer": "A",
+    "explanation": "Load Testing determines how the system behaves under expected user loads and helps identify performance bottlenecks."
+  },
+  {
+    "question": "Which test type involves testing the system's behavior under extreme conditions?",
+    "alternatives": {
+      "A": "Stress Testing",
+      "B": "Load Testing",
+      "C": "Performance Testing",
+      "D": "Usability Testing"
+    },
+    "correct_answer": "A",
+    "explanation": "Stress Testing evaluates how the system performs under extreme conditions, such as high traffic or limited resources."
+  },
+  {
+    "question": "During which test level are individual software modules tested in isolation?",
+    "alternatives": {
+      "A": "Unit Testing",
+      "B": "Integration Testing",
+      "C": "System Testing",
+      "D": "Acceptance Testing"
+    },
+    "correct_answer": "A",
+    "explanation": "Unit Testing involves testing individual software modules in isolation from the rest of the system."
+  },
+  {
+    "question": "Which test type focuses on verifying that the system meets specified functional requirements?",
+    "alternatives": {
+      "A": "Functional Testing",
+      "B": "Performance Testing",
+      "C": "Security Testing",
+      "D": "Usability Testing"
+    },
+    "correct_answer": "A",
+    "explanation": "Functional Testing verifies that the system behaves according to its specified functional requirements."
   }
 ]

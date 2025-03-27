@@ -1,13 +1,13 @@
 [
   {
-    "question": "Which of the following is a black-box test technique?",
+    "question": "Which of the following is NOT a black-box test technique?",
     "alternatives": {
       "A": "Statement testing",
       "B": "Equivalence partitioning",
       "C": "Error guessing",
-      "D": "Usability testing"
+      "D": "Boundary Value Analysis (BVA)"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "question": "A program validates a numeric field as follows: values less than 10 are rejected, values between 10 and 21 are accepted, values greater than or equal to 22 are rejected. Which of the following input values cover all of the equivalence partitions?",
@@ -20,7 +20,7 @@
     "correct_answer": "C"
   },
   {
-    "question": "Using the same specifications as the previous question, which of the following covers the MOST boundary values?",
+    "question": "A program validates a numeric field as follows: values less than 10 are rejected, values between 10 and 21 are accepted, values greater than or equal to 22 are rejected. Which of the following covers the MOST boundary values?",
     "alternatives": {
       "A": "9, 10, 11, 22",
       "B": "9, 10, 21, 22",
@@ -120,7 +120,7 @@
     "correct_answer": "D"
   },
   {
-    "question": "An input field takes the year of birth between 1900 and 2004. The boundary values for testing this field are:",
+    "question": "An input field takes the year of birth between 1900 and 2004. What are the correct values to use when using 2-value BVA?",
     "alternatives": {
       "A": "0, 1900, 2004, 2005",
       "B": "1900, 2004",
@@ -148,5 +148,171 @@
       "D": "Installation test"
     },
     "correct_answer": "A"
+  },
+  {
+    "question": "Which of the following techniques is categorized as black-box testing?",
+    "alternatives": {
+      "A": "Statement Testing",
+      "B": "Equivalence Partitioning",
+      "C": "Branch Testing",
+      "D": "Path Testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Equivalence Partitioning is a black-box testing technique that divides input data into partitions of equivalent data from which test cases can be derived."
+  },
+  {
+    "question": "What is the primary purpose of Boundary Value Analysis?",
+    "alternatives": {
+      "A": "To test the internal logic of the software",
+      "B": "To test the software with test cases that explore boundaries between partitions",
+      "C": "To ensure that all paths through the software are tested",
+      "D": "To test the software with random inputs"
+    },
+    "correct_answer": "B",
+    "explanation": "Boundary Value Analysis focuses on testing the boundaries between partitions, as errors often occur at the edges of input domains."
+  },
+  {
+    "question": "Which black-box testing technique uses a table of conditions and actions to design test cases?",
+    "alternatives": {
+      "A": "State Transition Testing",
+      "B": "Decision Table Testing",
+      "C": "Use Case Testing",
+      "D": "Error Guessing"
+    },
+    "correct_answer": "B",
+    "explanation": "Decision Table Testing uses a table to represent combinations of inputs and the corresponding system actions, helping to ensure all possible conditions are tested."
+  },
+  {
+    "question": "In State Transition Testing, what does a transition represent?",
+    "alternatives": {
+      "A": "A change from one state to another in the component or system",
+      "B": "A change in the code structure",
+      "C": "A change in the test environment",
+      "D": "A change in the test data"
+    },
+    "correct_answer": "A",
+    "explanation": "In State Transition Testing, a transition represents a change from one state to another in the system, triggered by events or conditions."
+  },
+  {
+    "question": "Which of the following is NOT a black-box testing technique?",
+    "alternatives": {
+      "A": "Boundary Value Analysis",
+      "B": "Equivalence Partitioning",
+      "C": "Statement Coverage",
+      "D": "State Transition Testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement Coverage is a white-box testing technique that involves testing the internal code structure, unlike black-box techniques which focus on input and output without considering internal code."
+  },
+  {
+    "question": "What is the primary goal of Use Case Testing?",
+    "alternatives": {
+      "A": "To test the system's internal logic",
+      "B": "To validate the system's behavior under various user scenarios",
+      "C": "To ensure all code statements are executed",
+      "D": "To test the system's performance under load"
+    },
+    "correct_answer": "B",
+    "explanation": "Use Case Testing focuses on validating the system's behavior by simulating real-world scenarios as described in use cases."
+  },
+  {
+    "question": "Which black-box testing technique is most suitable for testing the interactions between different combinations of inputs?",
+    "alternatives": {
+      "A": "Boundary Value Analysis",
+      "B": "Equivalence Partitioning",
+      "C": "Decision Table Testing",
+      "D": "State Transition Testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Decision Table Testing is effective for testing interactions between different combinations of inputs by systematically representing them in a table format."
+  },
+  {
+    "question": "In Boundary Value Analysis, which values are typically tested?",
+    "alternatives": {
+      "A": "Only the maximum and minimum values",
+      "B": "Values just inside and just outside the boundaries",
+      "C": "Random values within the input range",
+      "D": "All possible input values"
+    },
+    "correct_answer": "B",
+    "explanation": "Boundary Value Analysis involves testing values just inside and just outside the boundaries of input partitions to detect errors at the edges."
+  },
+  {
+    "question": "What is the main advantage of Equivalence Partitioning?",
+    "alternatives": {
+      "A": "It ensures complete path coverage",
+      "B": "It reduces the number of test cases needed by identifying representative values",
+      "C": "It tests the internal structure of the application",
+      "D": "It guarantees that all possible inputs are tested"
+    },
+    "correct_answer": "B",
+    "explanation": "Equivalence Partitioning reduces the number of test cases by dividing input data into partitions and selecting representative values from each, assuming that all values in a partition will be treated similarly by the system."
+  },
+  {
+    "question": "Which testing technique is based on the tester's experience and intuition?",
+    "alternatives": {
+      "A": "Equivalence Partitioning",
+      "B": "Boundary Value Analysis",
+      "C": "Error Guessing",
+      "D": "Decision Table Testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Error Guessing relies on the tester's experience and intuition to anticipate where defects might occur and design test cases accordingly."
+  },
+  {
+    "question": "Which black-box testing technique would be most appropriate for a system with a finite number of states and transitions between them?",
+    "alternatives": {
+      "A": "Equivalence Partitioning",
+      "B": "Boundary Value Analysis",
+      "C": "State Transition Testing",
+      "D": "Decision Table Testing"
+    },
+    "correct_answer": "C",
+    "explanation": "State Transition Testing is suitable for systems with a finite number of states and defined transitions, as it focuses on validating state changes triggered by events."
+  },
+  {
+    "question": "In Decision Table Testing, what do the columns typically represent?",
+    "alternatives": {
+      "A": "Test cases",
+      "B": "Conditions and actions",
+      "C": "System states",
+      "D": "Input partitions"
+    },
+    "correct_answer": "B",
+    "explanation": "In Decision Table Testing, columns typically represent combinations of conditions and the corresponding actions or outcomes, helping to ensure all possible scenarios are tested."
+  },
+  {
+    "question": "Which black-box testing technique is particularly useful when testing input fields with a range of values?",
+    "alternatives": {
+      "A": "State Transition Testing",
+      "B": "Decision Table Testing",
+      "C": "Boundary Value Analysis",
+      "D": "Error Guessing"
+    },
+    "correct_answer": "C",
+    "explanation": "Boundary Value Analysis is effective for testing input fields with a range of values by focusing on the boundary points where errors are more likely to occur."
+  },
+    {
+    "question": "Which black-box technique is most appropriate when the specification defines a set of states and the allowed transitions between them?",
+    "alternatives": {
+      "A": "Decision Table Testing",
+      "B": "Use Case Testing",
+      "C": "State Transition Testing",
+      "D": "Boundary Value Analysis"
+    },
+    "correct_answer": "C",
+    "explanation": "State Transition Testing is ideal when the software behaves differently based on its current state and events causing transitions."
+  },
+  {
+    "question": "Which of the following black-box techniques is best for deriving test cases when requirements are specified using 'if-then' rules?",
+    "alternatives": {
+      "A": "Equivalence Partitioning",
+      "B": "Decision Table Testing",
+      "C": "Boundary Value Analysis",
+      "D": "Use Case Testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Decision Table Testing is effective for capturing combinations of inputs and expected outputs, especially when 'if-then' logic is involved."
   }
 ]
+
