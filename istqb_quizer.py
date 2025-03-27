@@ -5,6 +5,7 @@ import platform
 import signal
 import sys
 from datetime import datetime
+import textwrap
 
 # Track stats
 correct = 0
@@ -34,16 +35,17 @@ def graceful_exit(signum, frame):
     print("\n\n👋 Graceful shutdown (Ctrl+C detected)")
     show_results(partial=True)
     sys.exit(0)
+def wrap_text(text, width=120, indent=""):
+    return "\n".join(textwrap.wrap(text, width=width, initial_indent=indent, subsequent_indent=indent))
 
 def ask_question(q, current_number, total):
     global correct, wrong, skipped, wrong_details
     clear_screen()
-    print(f"📝 Question {current_number} of {total}")
-    print(q['question'])
-
-    print("")  # Blank line before alternatives
+    print(wrap_text(f"📝 Question {current_number} of {total}", 120))
+    print(wrap_text(q['question'], 120))
+    print("")  # blank line before alternatives
     for key, val in q['alternatives'].items():
-        print(f"  {key}. {val}")
+        print(wrap_text(f"  {key}. {val}", 120))
 
     first_attempt = True
     attempted = False
@@ -100,7 +102,8 @@ def ask_question(q, current_number, total):
     # Show explanation if available
     explanation = q.get("explanation")
     if explanation:
-        print(f"\n💡 Explanation: {explanation}")
+        print("\n💡 Explanation:")
+        print(wrap_text(explanation, 120, indent="   "))
 
     input("\nPress Enter to continue...")
 
@@ -174,11 +177,23 @@ def write_results(quiz_name):
 
     print(f"\n📄 Results saved to: {filepath}")
 
+#!/usr/bin/env python3
+
+def print_banner():
+    print(r"""
+
+    ┳┏┓┏┳┓┏┓┳┓  ┏┓┳┳┳┏┓┏┓┏┓┳┓    
+    ┃┗┓ ┃ ┃┃┣┫  ┃┃┃┃┃┏┛┏┛┣ ┣┫    
+    ┻┗┛ ┻ ┗┻┻┛  ┗┻┗┛┻┗┛┗┛┗┛┛┗ 
+    An ISTQB Practice Quizzer
+    """)
 
 def main():
     signal.signal(signal.SIGINT, graceful_exit)
 
     clear_screen()
+    print_banner()  # Show ASCII logo
+
     print("📂 Available quiz files:\n")
     json_files = list_json_files("questions")
     if not json_files:
