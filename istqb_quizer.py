@@ -1,24 +1,29 @@
+#!/usr/bin/env python3
 import os
 import json
 import platform
 import signal
 import sys
+from datetime import datetime
 
-# Track quiz state
-current_index = 0
-questions = []
+# Track stats
 correct = 0
 wrong = 0
+skipped = 0
 wrong_details = []
 
 def clear_screen():
     os.system("cls" if platform.system() == "Windows" else "clear")
 
-def list_json_files(directory):
-    dirFiles = os.listdir(directory)
-    dirFiles.sort()
-    sorted(dirFiles)
-    return [f for f in dirFiles if f.endswith(".json")]
+def list_json_files(directory="questions"):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+        print(f"📁 Created missing directory: {directory}")
+        print("⚠️  No JSON files found. Please add quiz files to the 'questions/' folder.")
+        return []
+
+    files = [f for f in os.listdir(directory) if f.endswith(".json")]
+    return sorted(files, key=lambda f: f.lower())
 
 def load_questions(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
@@ -26,94 +31,162 @@ def load_questions(filepath):
 
 def graceful_exit(signum, frame):
     clear_screen()
-    print("\n\n👋 Graceful shutdown initiated (Ctrl+C pressed)")
-    total_answered = correct + wrong
-    percent = (correct / total_answered) * 100 if total_answered > 0 else 0
-
-    print("\n📊 Partial Quiz Summary:")
-    print(f"✅ Correct on first try: {correct}")
-    print(f"❌ Wrong on first try or skipped: {wrong}")
-    print(f"📈 Score: {percent:.1f}%")
-
-    if wrong_details:
-        print("\n❗ Questions missed so far:")
-        for d in wrong_details:
-            print(f"{d['number']}. {d['question']}")
-            print(f"   ➤ Correct answer: {d['correct_answer']}")
-            print(f"   💡 Explanation: {d.get('explanation', 'No explanation provided.')}\n")
+    print("\n\n👋 Graceful shutdown (Ctrl+C detected)")
+    show_results(partial=True)
     sys.exit(0)
 
 def ask_question(q, current_number, total):
-    global correct, wrong, wrong_details
+    global correct, wrong, skipped, wrong_details
     clear_screen()
     print(f"📝 Question {current_number} of {total}")
     print(q['question'])
+
+    print("")  # Blank line before alternatives
     for key, val in q['alternatives'].items():
         print(f"  {key}. {val}")
 
     first_attempt = True
+    attempted = False
+    answered = False
+    counted_as_wrong = False
 
-    while True:
+    while not answered:
+        print("")  # Blank line before input
         answer = input("Your answer (A/B/C/D), or 's' to skip: ").strip().upper()
+
         if answer == 'S':
-            print("⏭️ Skipped.")
-            wrong += 1
-            wrong_details.append({
-                "number": current_number,
-                "question": q['question'],
-                "correct_answer": q['correct_answer'],
-                "explanation": q.get("explanation")
-            })
-            if "explanation" in q:
-                print(f"\n💡 Explanation: {q['explanation']}")
-            input("\nPress Enter to continue...")
-            return
+            if not attempted:
+                skipped += 1
+                print("⏭️ Skipped.")
+            else:
+                print("⏭️ Skipped after attempting. Not counted as skipped.")
+            answered = True
+
         elif answer == q['correct_answer']:
             if first_attempt:
                 correct += 1
-                print("✅ Correct!")
+                print("✅ Correct on first try!")
             else:
-                wrong += 1
-                print("✅ Correct! (but after one or more failed attempts)")
-                wrong_details.append({
-                    "number": current_number,
-                    "question": q['question'],
-                    "correct_answer": q['correct_answer'],
-                    "explanation": q.get("explanation")
-                })
+                if not counted_as_wrong:
+                    wrong += 1
+                    counted_as_wrong = True
+                    wrong_details.append({
+                        "number": current_number,
+                        "question": q['question'],
+                        "correct_answer": q['correct_answer'],
+                        "explanation": q.get("explanation")
+                    })
+                print("✅ Correct (but not counted as correct – previous wrong attempt)")
+            answered = True
 
-            if "explanation" in q:
-                print(f"\n💡 Explanation: {q['explanation']}")
-            input("\nPress Enter to continue...")
-            return
         elif answer in q['alternatives']:
             if first_attempt:
                 first_attempt = False
+            if not counted_as_wrong:
                 wrong += 1
+                counted_as_wrong = True
                 wrong_details.append({
                     "number": current_number,
                     "question": q['question'],
                     "correct_answer": q['correct_answer'],
                     "explanation": q.get("explanation")
                 })
+            attempted = True
             print("❌ Wrong answer. Try again or type 's' to skip.")
+
         else:
-            print("Invalid input. Please enter A, B, C, D, or 's' to skip.")
+            print("Invalid input. Please enter A, B, C, D, or 's'.")
+
+    # Show explanation if available
+    explanation = q.get("explanation")
+    if explanation:
+        print(f"\n💡 Explanation: {explanation}")
+
+    input("\nPress Enter to continue...")
+
+def show_results(partial=False):
+    total = correct + wrong + skipped
+    percent = (correct / total * 100) if total > 0 else 0
+
+    label = "📊 Partial Quiz Summary:" if partial else "📊 Final Quiz Summary:"
+    print(f"\n{label}")
+    print(f"✅ Correct on first try: {correct}")
+    print(f"❌ Wrong on first try (or eventually correct after wrong): {wrong}")
+    print(f"⏭️ Skipped: {skipped}")
+    print(f"📈 Score: {percent:.1f}%")
+
+    if wrong_details:
+        print("\n❗ Questions you missed or got wrong on first try:")
+        for d in wrong_details:
+            print(f"{d['number']}. {d['question']}")
+            print(f"   ➤ Correct answer: {d['correct_answer']}")
+            if d.get("explanation"):
+                print(f"   💡 Explanation: {d['explanation']}")
+            print()
+
+
+def write_results(quiz_name):
+    # Ensure the results directory exists
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+
+    # Build the filename
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    base_filename = f"{quiz_name}_{date_str}"
+    run_number = 1
+
+    while True:
+        filename = f"{base_filename}_run{run_number}.md"
+        filepath = os.path.join(results_dir, filename)
+        if not os.path.exists(filepath):
+            break
+        run_number += 1
+
+    # Build result content
+    total = correct + wrong + skipped
+    percent = (correct / total * 100) if total > 0 else 0
+
+    lines = [
+        f"# Quiz Results – {quiz_name}",
+        f"**Date:** {date_str}",
+        f"**Run:** {run_number}",
+        "",
+        "## Summary",
+        f"- ✅ Correct on first try: **{correct}**",
+        f"- ❌ Wrong on first try: **{wrong}**",
+        f"- ⏭️ Skipped: **{skipped}**",
+        f"- 📈 Score: **{percent:.1f}%**",
+        ""
+    ]
+
+    if wrong_details:
+        lines.append("## Questions You Missed or Skipped")
+        for d in wrong_details:
+            lines.append(f"### {d['number']}. {d['question']}")
+            lines.append(f"- **Correct Answer:** {d['correct_answer']}")
+            if d.get("explanation"):
+                lines.append(f"- 💡 **Explanation:** {d['explanation']}")
+            lines.append("")
+
+    # Save to file
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    print(f"\n📄 Results saved to: {filepath}")
+
 
 def main():
-    global questions
-
-    signal.signal(signal.SIGINT, graceful_exit)  # Handle Ctrl+C
+    signal.signal(signal.SIGINT, graceful_exit)
 
     clear_screen()
     print("📂 Available quiz files:\n")
-    json_files = list_json_files(".")
+    json_files = list_json_files("questions")
     if not json_files:
-        print("No JSON quiz files found in the current directory.")
+        print("❌ No JSON quiz files found in the 'questions/' directory.")
         return
 
     for i, file in enumerate(json_files):
-        print(f"{i + 1}. {file}")
+        print(f"{i + 1}. {file[:-5]}")  # Strip '.json' from display
 
     while True:
         try:
@@ -125,25 +198,16 @@ def main():
         except ValueError:
             print("Please enter a number.")
 
-    questions = load_questions(json_files[selected])
+    filepath = os.path.join("questions", json_files[selected])
+    questions = load_questions(filepath)
     total_questions = len(questions)
 
     for idx, q in enumerate(questions):
         ask_question(q, idx + 1, total_questions)
 
     clear_screen()
-    percent = (correct / total_questions) * 100 if total_questions > 0 else 0
-    print("\n📊 Quiz Summary:")
-    print(f"✅ Correct on first try: {correct}")
-    print(f"❌ Wrong on first try or skipped: {wrong}")
-    print(f"📈 Score: {percent:.1f}%")
-
-    if wrong_details:
-        print("\n❗ Questions you missed on the first try:")
-        for d in wrong_details:
-            print(f"{d['number']}. {d['question']}")
-            print(f"   ➤ Correct answer: {d['correct_answer']}")
-            print(f"   💡 Explanation: {d.get('explanation', 'No explanation provided.')}\n")
+    show_results()
+    write_results(quiz_name=json_files[selected][:-5])  # Strip .json from filename
 
 if __name__ == "__main__":
     main()

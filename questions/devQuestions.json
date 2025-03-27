@@ -7,7 +7,7 @@
       "C": "Testing the interactions between integrated components.",
       "D": "Testing the entire system as a whole."
     },
-    "correct_answer": "D",
+    "correct_answer": "A",
     "explanation": "System testing evaluates the system as a complete and integrated product to verify that it meets the specified requirements."
   },
   {
@@ -18,7 +18,7 @@
       "C": "To ensure that the system components integrate correctly.",
       "D": "To test non-functional aspects like performance and usability."
     },
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": "Acceptance testing is performed to determine whether the system satisfies the acceptance criteria and is ready for delivery to the customer or user."
   },
   {
@@ -29,7 +29,7 @@
       "C": "Validating business workflows with real data.",
       "D": "Verifying compliance with regulatory requirements."
     },
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": "Integration testing aims to detect interface defects between modules or components by verifying their interactions."
   },
   {
@@ -40,7 +40,7 @@
       "C": "Unit testing",
       "D": "Integration testing"
     },
-    "correct_answer": "C",
+    "correct_answer": "A",
     "explanation": "Unit testing focuses on verifying the smallest testable parts of an application, typically using white-box techniques to assess internal logic."
   },
   {

@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Which of the following is a primary benefit of collaboration-based testing approaches?",
+    "alternatives": {
+      "A": "They eliminate the need for automated testing.",
+      "B": "They ensure 100% test coverage.",
+      "C": "They involve various stakeholders in the testing process.",
+      "D": "They rely only on testers for quality assurance."
+    },
+    "correct_answer": "C",
+    "explanation": "Collaboration-based approaches emphasize shared responsibility, involving testers, developers, and business stakeholders to improve quality."
+  },
+  {
+    "question": "Which practice is often used in collaboration-based testing?",
+    "alternatives": {
+      "A": "Test-Driven Development (TDD)",
+      "B": "Boundary Value Analysis",
+      "C": "Pairwise Testing",
+      "D": "Checklist-Based Testing"
+    },
+    "correct_answer": "A",
+    "explanation": "TDD involves collaboration between developers and testers by writing tests before code, encouraging early feedback and shared ownership."
+  },
+  {
+    "question": "In Behavior-Driven Development (BDD), who typically writes the acceptance criteria?",
+    "alternatives": {
+      "A": "Only the testers",
+      "B": "Only the developers",
+      "C": "Business stakeholders, testers, and developers together",
+      "D": "The project sponsor"
+    },
+    "correct_answer": "C",
+    "explanation": "BDD promotes collaboration by having all stakeholders contribute to defining the behavior of the system through shared understanding."
+  },
+  {
+    "question": "Which format is commonly used in BDD to express test scenarios?",
+    "alternatives": {
+      "A": "Gherkin (Given-When-Then)",
+      "B": "UML diagrams",
+      "C": "Decision tables",
+      "D": "Control flow graphs"
+    },
+    "correct_answer": "A",
+    "explanation": "BDD often uses the Gherkin syntax (Given-When-Then) to describe expected system behavior in a human-readable and collaborative way."
+  },
+  {
+    "question": "Which of the following is an essential element of Acceptance Test-Driven Development (ATDD)?",
+    "alternatives": {
+      "A": "Writing unit tests after development",
+      "B": "Developers working independently",
+      "C": "Acceptance criteria defined collaboratively before development",
+      "D": "Performance benchmarks"
+    },
+    "correct_answer": "C",
+    "explanation": "ATDD relies on early collaboration to define acceptance criteria that drive both development and validation."
+  },
+  {
+    "question": "What is the main goal of collaboration-based testing?",
+    "alternatives": {
+      "A": "To assign all responsibility to the QA team",
+      "B": "To find defects later in the process",
+      "C": "To share understanding and quality responsibility across roles",
+      "D": "To execute tests as quickly as possible"
+    },
+    "correct_answer": "C",
+    "explanation": "Collaboration-based testing aims to break silos and encourage shared understanding and ownership of quality."
+  },
+  {
+    "question": "Which approach emphasizes shared responsibility for quality between business, development, and testing?",
+    "alternatives": {
+      "A": "V-model",
+      "B": "Waterfall",
+      "C": "Agile with BDD or ATDD",
+      "D": "Spiral model"
+    },
+    "correct_answer": "C",
+    "explanation": "Agile methodologies that include BDD and ATDD focus on continuous collaboration among all stakeholders for quality assurance."
+  },
+  {
+    "question": "Which statement is TRUE about collaboration-based approaches?",
+    "alternatives": {
+      "A": "They only involve testers in writing tests.",
+      "B": "They reduce communication among teams.",
+      "C": "They encourage joint ownership of test quality.",
+      "D": "They delay testing until after coding is complete."
+    },
+    "correct_answer": "C",
+    "explanation": "A key advantage of collaboration-based approaches is encouraging joint ownership of product quality and early communication."
+  },
+  {
+    "question": "Which role benefits most from the shared understanding produced in collaboration-based testing?",
+    "alternatives": {
+      "A": "Test automation engineers",
+      "B": "System administrators",
+      "C": "All stakeholders including developers, testers, and business analysts",
+      "D": "Database architects"
+    },
+    "correct_answer": "C",
+    "explanation": "Collaboration ensures that all roles share the same understanding of system behavior, improving alignment and reducing defects."
+  },
+  {
+    "question": "Which of the following best describes BDD?",
+    "alternatives": {
+      "A": "An approach that focuses solely on code coverage",
+      "B": "Testing based on random inputs",
+      "C": "Testing based on formal design documentation",
+      "D": "An approach where behavior is specified collaboratively before development"
+    },
+    "correct_answer": "D",
+    "explanation": "BDD emphasizes defining system behavior through collaboration before the code is written, using scenarios to guide development."
+  },
+  {
+    "question": "What makes collaboration-based test approaches particularly suitable for Agile projects?",
+    "alternatives": {
+      "A": "They require minimal documentation",
+      "B": "They eliminate the need for retrospectives",
+      "C": "They foster continuous communication and feedback",
+      "D": "They rely only on exploratory testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Agile projects benefit from constant communication and feedback loops, which collaboration-based testing inherently promotes."
+  },
+  {
+    "question": "In ATDD, what drives the development process?",
+    "alternatives": {
+      "A": "Regression test results",
+      "B": "Acceptance tests derived from user stories",
+      "C": "Detailed functional specifications",
+      "D": "Test scripts written post-development"
+    },
+    "correct_answer": "B",
+    "explanation": "In ATDD, user stories are used to create acceptance tests that guide and validate development."
+  },
+  {
+    "question": "How does early collaboration impact defect prevention?",
+    "alternatives": {
+      "A": "It has no measurable effect",
+      "B": "It increases the number of bugs",
+      "C": "It helps prevent misunderstandings and catches issues early",
+      "D": "It slows down the development process"
+    },
+    "correct_answer": "C",
+    "explanation": "Early collaboration clarifies requirements and expectations, reducing the risk of defects due to miscommunication."
+  },
+  {
+    "question": "Which artifact is often produced in collaboration-based testing sessions?",
+    "alternatives": {
+      "A": "Gantt charts",
+      "B": "Use case diagrams",
+      "C": "Shared scenarios or examples",
+      "D": "Technical specifications"
+    },
+    "correct_answer": "C",
+    "explanation": "Collaboration sessions like BDD or ATDD workshops often result in shared examples or scenarios that guide development and testing."
+  },
+  {
+    "question": "What is the role of the tester in a collaboration-based testing environment?",
+    "alternatives": {
+      "A": "To write automated scripts after development",
+      "B": "To review code for logic errors",
+      "C": "To contribute to defining testable acceptance criteria with the team",
+      "D": "To prepare only performance tests"
+    },
+    "correct_answer": "C",
+    "explanation": "Testers work alongside developers and business representatives to define testable requirements and improve shared understanding."
+  }
+]
