@@ -1,0 +1,112 @@
+[
+  {
+    "question": "How many questions are there in the ISTQB Foundation Level exam?",
+    "alternatives": {
+      "A": "20",
+      "B": "30",
+      "C": "40",
+      "D": "50"
+    },
+    "correct_answer": "C",
+    "explanation": "The ISTQB Foundation Level exam consists of 40 multiple-choice questions, each worth one point."
+  },
+  {
+    "question": "What is the minimum percentage required to pass the ISTQB Foundation Level exam?",
+    "alternatives": {
+      "A": "50%",
+      "B": "65%",
+      "C": "70%",
+      "D": "75%"
+    },
+    "correct_answer": "B",
+    "explanation": "To pass, you must score at least 65%, which means answering at least 26 out of 40 questions correctly."
+  },
+  {
+    "question": "How much time do you have to complete the ISTQB Foundation Level exam (in English)?",
+    "alternatives": {
+      "A": "45 minutes",
+      "B": "60 minutes",
+      "C": "75 minutes",
+      "D": "90 minutes"
+    },
+    "correct_answer": "B",
+    "explanation": "You have 60 minutes to complete the exam. If your native language is not English, you may be allowed 75 minutes."
+  },
+  {
+    "question": "What type of questions are used in the ISTQB Foundation Level exam?",
+    "alternatives": {
+      "A": "True/False",
+      "B": "Multiple Choice",
+      "C": "Short Answer",
+      "D": "Fill in the blanks"
+    },
+    "correct_answer": "B",
+    "explanation": "The exam uses multiple-choice questions, where only one option is correct per question."
+  },
+  {
+    "question": "Can you skip and return to questions during the ISTQB exam (computer-based)?",
+    "alternatives": {
+      "A": "Yes, you can flag and revisit questions.",
+      "B": "No, questions must be answered in order.",
+      "C": "Only if you ask the proctor.",
+      "D": "Only the last 5 questions are skippable."
+    },
+    "correct_answer": "A",
+    "explanation": "In computer-based exams, you can mark questions to revisit later, which is useful for managing time."
+  },
+  {
+    "question": "What is a good strategy if you’re unsure of a question during the exam?",
+    "alternatives": {
+      "A": "Guess randomly and move on.",
+      "B": "Spend at least 5 minutes trying to solve it.",
+      "C": "Mark the question and come back to it later.",
+      "D": "Leave it unanswered."
+    },
+    "correct_answer": "C",
+    "explanation": "Marking a question allows you to revisit it later after answering easier questions, which helps manage time better."
+  },
+  {
+    "question": "Are all questions in the ISTQB exam weighted the same?",
+    "alternatives": {
+      "A": "No, difficult questions are worth more points.",
+      "B": "Yes, each question is worth one point.",
+      "C": "Essay questions are worth more.",
+      "D": "You get more points for answering faster."
+    },
+    "correct_answer": "B",
+    "explanation": "Each of the 40 questions is worth one point, regardless of difficulty."
+  },
+  {
+    "question": "Which topics are emphasized most in the ISTQB Foundation Level syllabus?",
+    "alternatives": {
+      "A": "Agile Testing and Performance Testing",
+      "B": "Static Testing and Automation",
+      "C": "Testing Fundamentals and Test Techniques",
+      "D": "Programming Concepts"
+    },
+    "correct_answer": "C",
+    "explanation": "The exam emphasizes fundamental concepts and black-box test techniques, as well as the test process and lifecycle."
+  },
+  {
+    "question": "Which is the best way to prepare for the ISTQB exam?",
+    "alternatives": {
+      "A": "Only memorize definitions",
+      "B": "Read the syllabus, do sample questions, and understand concepts",
+      "C": "Skip reading and only take mock exams",
+      "D": "Focus on white-box testing"
+    },
+    "correct_answer": "B",
+    "explanation": "The most effective prep is to read the syllabus, study glossary terms, and practice with real sample questions."
+  },
+  {
+    "question": "How can the ISTQB glossary help during exam preparation?",
+    "alternatives": {
+      "A": "It contains sample answers for exam questions",
+      "B": "It provides hints for the exam",
+      "C": "It explains key terminology used in the exam",
+      "D": "It helps you avoid having to read the syllabus"
+    },
+    "correct_answer": "C",
+    "explanation": "Understanding ISTQB's glossary helps clarify test questions and terminology that appear on the exam."
+  }
+]

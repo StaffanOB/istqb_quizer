@@ -2,151 +2,331 @@
   {
     "question": "Which of the following is a major task of test planning?",
     "alternatives": {
-      "A": "Initiating corrective actions",
-      "B": "Monitoring progress and test coverage",
-      "C": "Scheduling test analysis and design tasks",
-      "D": "Measuring and analyzing results"
+      "A": "Evaluating exit criteria and reporting",
+      "B": "Measuring and analyzing results",
+      "C": "Scheduling test analysis and design",
+      "D": "Analyzing lessons learned"
     },
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "explanation": "Scheduling test analysis and design is a primary test planning task, ensuring test activities are aligned with the project schedule and resource availability."
   },
   {
-    "question": "Which of the following factors is NOT relevant for test estimation during initial test planning?",
+    "question": "What is the purpose of entry and exit criteria in a test plan?",
     "alternatives": {
-      "A": "The complexity and size of the software under test",
-      "B": "The availability and skills of the test team members",
-      "C": "The quality and reliability of the test tools and environment",
-      "D": "The number and severity of the defects found during testing"
+      "A": "To define the scope of testing",
+      "B": "To determine when to automate testing",
+      "C": "To establish when to start and stop testing",
+      "D": "To plan exploratory testing sessions"
     },
-    "correct_answer": "D"
+    "correct_answer": "C",
+    "explanation": "Entry and exit criteria are used to define when testing activities should begin or end, ensuring that certain conditions are met before progressing."
   },
   {
-    "question": "Which of the following is NOT decided in the test-planning phase?",
+    "question": "Which of the following should be considered when planning the testing of a project?",
     "alternatives": {
-      "A": "Schedules and deliverables",
-      "B": "Hardware and software",
-      "C": "Entry and exit criteria",
-      "D": "Types of test cases"
+      "A": "The size of the development team",
+      "B": "The number of software licenses needed",
+      "C": "The risks associated with the system being tested",
+      "D": "The frequency of customer meetings"
     },
-    "correct_answer": "B"
+    "correct_answer": "C",
+    "explanation": "Risk-based testing helps prioritize testing activities. Test planning should consider product and project risks to guide focus and resource allocation."
   },
   {
-    "question": "Designing and prioritizing high-level test cases occurs during which activity in the fundamental test process?",
+    "question": "Which of the following is typically a test deliverable?",
     "alternatives": {
-      "A": "Test planning",
-      "B": "Test analysis and design",
-      "C": "Test implementation and execution",
-      "D": "Test closure activities"
+      "A": "Incident report",
+      "B": "Test script",
+      "C": "Test environment setup",
+      "D": "Project charter"
     },
-    "correct_answer": "B"
+    "correct_answer": "A",
+    "explanation": "Test deliverables include artifacts like test plans, test scripts, and incident reports which are handed off at the end of testing or test phases."
   },
   {
-    "question": "Which of the following is a typical test objective?",
+    "question": "Which of the following activities is part of test control?",
     "alternatives": {
-      "A": "Preventing defects",
-      "B": "Debugging the code",
-      "C": "Writing test scripts",
-      "D": "Analyzing the root cause of defects"
+      "A": "Writing the test plan",
+      "B": "Analyzing lessons learned",
+      "C": "Re-prioritizing tests when project schedule changes",
+      "D": "Designing test cases"
     },
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "explanation": "Test control activities include adapting the test plan and priorities based on current project status and progress."
   },
   {
-    "question": "Evaluating testability of the requirements and system are a part of which activity?",
+    "question": "What is the purpose of a test plan?",
     "alternatives": {
-      "A": "Test planning",
-      "B": "Test monitoring and control",
-      "C": "Requirement analysis",
-      "D": "Test closure"
+      "A": "To document test execution",
+      "B": "To define what needs to be tested and how",
+      "C": "To list project stakeholders",
+      "D": "To define code standards"
     },
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "explanation": "The test plan describes the scope, approach, resources, schedule, and items to be tested. It guides the entire testing process."
   },
   {
-    "question": "Test data planning essentially includes:",
+    "question": "What is typically included in a test plan?",
     "alternatives": {
-      "A": "Network",
-      "B": "Operational model",
-      "C": "Boundary value analysis",
-      "D": "Test procedure planning"
+      "A": "Bug severity classification",
+      "B": "Test item pass/fail criteria",
+      "C": "Customer feedback form",
+      "D": "Configuration management procedure"
     },
-    "correct_answer": "D"
-  },
-  {
-    "question": "Which of the following is a valid reason for writing test cases based on experience and intuition?",
-    "alternatives": {
-      "A": "Use of formal techniques requires expensive training",
-      "B": "Only experience can ensure all functionality is covered",
-      "C": "Tests based on experience and intuition can supplement formal techniques",
-      "D": "Formal techniques require the use of expensive tools"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "question": "Which of the following would be appropriate test objectives for user acceptance testing of the first release of a new software product aimed at a general market and built using Agile methods?",
-    "alternatives": {
-      "A": "To identify as many defects as possible",
-      "B": "To maximize code coverage",
-      "C": "To ensure the product works as expected",
-      "D": "To assess the overall quality of the product"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "question": "Which of the following characteristics is most likely to promote effective software testing?",
-    "alternatives": {
-      "A": "Independence from the production process",
-      "B": "A belief that programmers always make mistakes",
-      "C": "Knowledge of the number of defects typically found in a program",
-      "D": "Confidence that the next stage will find defects missed at this stage"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "question": "What is the main purpose of a test plan?",
-    "alternatives": {
-      "A": "To document test cases",
-      "B": "To communicate the scope, approach, and resources of testing",
-      "C": "To assign defects to developers",
-      "D": "To define coding standards"
-    },
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "explanation": "Pass/fail criteria for test items are essential for determining test outcomes and are documented in the test plan."
   },
   {
     "question": "Who is primarily responsible for creating the test plan?",
     "alternatives": {
-      "A": "The developers",
-      "B": "The project manager",
-      "C": "The tester",
-      "D": "The test manager"
+      "A": "The product owner",
+      "B": "The test analyst",
+      "C": "The test manager",
+      "D": "The development team lead"
     },
-    "correct_answer": "D"
+    "correct_answer": "C",
+    "explanation": "The test manager is responsible for creating the test plan, coordinating resources, and managing risk, budget, and progress."
   },
   {
-    "question": "What is a typical input for test planning?",
+    "question": "Which of the following factors can influence the level of detail in the test plan?",
     "alternatives": {
-      "A": "The list of logged defects",
-      "B": "The final test report",
-      "C": "The project plan",
-      "D": "The test summary report"
+      "A": "The programming language used",
+      "B": "The complexity and risks of the system under test",
+      "C": "The number of test cases",
+      "D": "The customer location"
     },
-    "correct_answer": "C"
+    "correct_answer": "B",
+    "explanation": "More complex or high-risk systems typically require more detailed test planning to address the greater potential for failure."
   },
   {
-    "question": "Which of the following is NOT typically included in a test plan?",
+    "question": "Which of the following test documents is typically created during test planning?",
+    "alternatives": {
+      "A": "Test log",
+      "B": "Test script",
+      "C": "Test plan",
+      "D": "Test incident report"
+    },
+    "correct_answer": "C",
+    "explanation": "The test plan is created during the test planning phase and outlines the testing strategy, scope, resources, and schedule."
+  },
+  {
+    "question": "Why is it important to define roles and responsibilities during test planning?",
+    "alternatives": {
+      "A": "To avoid duplication of test scripts",
+      "B": "To clarify who is responsible for what testing activities",
+      "C": "To satisfy audit requirements",
+      "D": "To eliminate the need for documentation"
+    },
+    "correct_answer": "B",
+    "explanation": "Clearly defining roles and responsibilities ensures that each testing task is assigned and accountability is clear, helping the testing process run smoothly."
+  },
+  {
+    "question": "Which of the following would typically NOT be included in a test plan?",
     "alternatives": {
       "A": "Test objectives",
-      "B": "Entry and exit criteria",
-      "C": "Budget forecast for marketing",
-      "D": "Resource planning"
+      "B": "Risk analysis",
+      "C": "Code structure",
+      "D": "Test schedule"
     },
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "explanation": "The code structure is not typically included in a test plan, as it is a concern of the development process, not the test planning process."
   },
   {
-    "question": "During test planning, which of the following risks is most relevant?",
+    "question": "What is the purpose of identifying test items in the test plan?",
     "alternatives": {
-      "A": "Test environment may not be available on time",
-      "B": "Users may dislike the final product",
-      "C": "Marketing may miss product launch",
-      "D": "Developers might not like the test cases"
+      "A": "To define configuration settings",
+      "B": "To outline what will be tested",
+      "C": "To establish budget limits",
+      "D": "To document past incidents"
     },
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "explanation": "Identifying test items clearly outlines what components, features, or modules are subject to testing in the current scope."
+  },
+  {
+    "question": "What is the relationship between test planning and quality risk analysis?",
+    "alternatives": {
+      "A": "Quality risk analysis is performed only after test planning is complete",
+      "B": "Test planning defines how risks will be managed in the test process",
+      "C": "Risk analysis is not part of test planning",
+      "D": "Test planning is used to reduce code defects"
+    },
+    "correct_answer": "B",
+    "explanation": "Test planning involves defining how to address quality risks through appropriate test design, prioritization, and effort allocation."
+  },
+  {
+    "question": "How can test planning help manage stakeholder expectations?",
+    "alternatives": {
+      "A": "By limiting the number of reported defects",
+      "B": "By skipping unnecessary testing phases",
+      "C": "By clearly communicating scope, deliverables, and timelines",
+      "D": "By reducing the need for status meetings"
+    },
+    "correct_answer": "C",
+    "explanation": "A clear and well-communicated test plan sets realistic expectations by outlining what will be delivered, when, and how — improving transparency and trust with stakeholders."
+  },
+  {
+    "question": "Which of the following is a major task of test planning?",
+    "alternatives": {
+      "A": "Scheduling test analysis and design tasks.",
+      "B": "Initiating corrective actions.",
+      "C": "Monitoring progress and test coverage.",
+      "D": "Measuring and analyzing results."
+    },
+    "correct_answer": "A",
+    "explanation": "Scheduling test analysis and design tasks is a major task during test planning, ensuring that testing activities are organized and resources are allocated appropriately."
+  },
+  {
+    "question": "What is the primary purpose of defining entry and exit criteria in a test plan?",
+    "alternatives": {
+      "A": "To specify the test techniques to be used.",
+      "B": "To determine the schedule for testing activities.",
+      "C": "To establish when testing should start and stop.",
+      "D": "To identify the features to be tested."
+    },
+    "correct_answer": "C",
+    "explanation": "Defining entry and exit criteria helps in determining when testing activities should commence and conclude, ensuring that testing is conducted under appropriate conditions and objectives are met."
+  },
+  {
+    "question": "Which document outlines the scope, approach, resources, and schedule of intended testing activities?",
+    "alternatives": {
+      "A": "Test Case Specification",
+      "B": "Test Plan",
+      "C": "Test Procedure Specification",
+      "D": "Test Design Specification"
+    },
+    "correct_answer": "B",
+    "explanation": "A Test Plan outlines the scope, approach, resources, and schedule of intended testing activities, serving as a guide for managing and controlling the testing process."
+  },
+  {
+    "question": "In test planning, why is it important to identify test deliverables?",
+    "alternatives": {
+      "A": "To determine the test environment.",
+      "B": "To specify the test design techniques.",
+      "C": "To define what will be provided to stakeholders.",
+      "D": "To establish the test schedule."
+    },
+    "correct_answer": "C",
+    "explanation": "Identifying test deliverables is crucial to define what artifacts will be provided to stakeholders, ensuring transparency and setting clear expectations."
+  },
+  {
+    "question": "Which of the following is NOT typically decided during the test planning phase?",
+    "alternatives": {
+      "A": "Schedules and deliverables",
+      "B": "Hardware and software requirements",
+      "C": "Entry and exit criteria",
+      "D": "Types of test cases to be designed"
+    },
+    "correct_answer": "B",
+    "explanation": "Hardware and software requirements are typically determined during the project planning phase, not specifically during test planning."
+  },
+  {
+    "question": "What is the role of risk analysis in test planning?",
+    "alternatives": {
+      "A": "To identify possible failures in the system.",
+      "B": "To determine the test environment setup.",
+      "C": "To prioritize testing activities based on potential impact.",
+      "D": "To define the test schedule."
+    },
+    "correct_answer": "C",
+    "explanation": "Risk analysis in test planning helps prioritize testing activities by assessing the potential impact and likelihood of defects, ensuring that critical areas are tested thoroughly."
+  },
+  {
+    "question": "Which of the following factors should be considered when determining the test effort?",
+    "alternatives": {
+      "A": "Test environment availability",
+      "B": "Defect detection percentage",
+      "C": "Tester’s experience level",
+      "D": "All of the above"
+    },
+    "correct_answer": "D",
+    "explanation": "All listed factors—test environment availability, defect detection percentage, and tester’s experience level—should be considered when estimating the test effort to ensure accurate planning."
+  },
+  {
+    "question": "Why is it important to define the test environment during test planning?",
+    "alternatives": {
+      "A": "To ensure test results are consistent and reliable.",
+      "B": "To allocate resources effectively.",
+      "C": "To identify test deliverables.",
+      "D": "To establish entry and exit criteria."
+    },
+    "correct_answer": "A",
+    "explanation": "Defining the test environment ensures that tests are conducted under consistent and controlled conditions, leading to reliable and reproducible results."
+  },
+  {
+    "question": "Which of the following is a benefit of early test planning?",
+    "alternatives": {
+      "A": "Reduced need for test documentation.",
+      "B": "Early identification of potential issues and resource needs.",
+      "C": "Elimination of the test execution phase.",
+      "D": "Increased complexity in test design."
+    },
+    "correct_answer": "B",
+    "explanation": "Early test planning allows for the identification of potential issues and resource requirements, enabling proactive management and reducing the likelihood of surprises during later stages."
+  },
+  {
+    "question": "In the context of test planning, what does the term 'test scope' refer to?",
+    "alternatives": {
+      "A": "The extent to which a system is tested.",
+      "B": "The detailed design of test cases.",
+      "C": "The schedule of testing activities.",
+      "D": "The tools and techniques to be used in testing."
+    },
+    "correct_answer": "A",
+    "explanation": "Test scope defines the boundaries and extent of testing, specifying what features and functionalities will be tested and to what depth."
+  },
+  {
+    "question": "What is the significance of defining test objectives during test planning?",
+    "alternatives": {
+      "A": "To determine the test schedule.",
+      "B": "To establish clear goals for what testing should achieve.",
+      "C": "To allocate resources effectively.",
+      "D": "To identify the test environment requirements."
+    },
+    "correct_answer": "B",
+    "explanation": "Defining test objectives provides clear goals for the testing process, ensuring that all stakeholders have a common understanding of what the testing aims to accomplish."
+  },
+  {
+    "question": "Which of the following should be included in a test plan?",
+    "alternatives": {
+      "A": "Test items",
+      "B": "Features to be tested",
+      "C": "Test deliverables",
+      "D": "All of the above"
+    },
+    "correct_answer": "D",
+    "explanation": "A comprehensive test plan includes test items, features to be tested, and test deliverables, among other components, to provide a complete overview of the testing approach."
+  },
+  {
+    "question": "Which of the following best describes the role of the test plan in communication?",
+    "alternatives": {
+      "A": "It replaces the need for meetings between teams.",
+      "B": "It provides a formal mechanism for defect tracking.",
+      "C": "It helps ensure all stakeholders understand the test scope and approach.",
+      "D": "It describes the details of each test case."
+    },
+    "correct_answer": "C",
+    "explanation": "The test plan is a communication tool that ensures all stakeholders have a shared understanding of the scope, objectives, responsibilities, and approach for testing."
+  },
+  {
+    "question": "What is the relationship between test planning and test control?",
+    "alternatives": {
+      "A": "They are the same activity.",
+      "B": "Test control is used to adjust the test plan as needed.",
+      "C": "Test planning is only needed if control fails.",
+      "D": "Test control eliminates the need for planning."
+    },
+    "correct_answer": "B",
+    "explanation": "Test control involves monitoring progress and making adjustments to the test plan based on actual results, ensuring the test process remains aligned with objectives."
+  },
+  {
+    "question": "Which factor is most likely to impact the level of detail in a test plan?",
+    "alternatives": {
+      "A": "The budget for the development team",
+      "B": "The number of testers assigned",
+      "C": "The maturity and complexity of the system under test",
+      "D": "Whether the project uses Scrum or Waterfall"
+    },
+    "correct_answer": "C",
+    "explanation": "More mature and complex systems typically require more detailed test plans to ensure adequate coverage and coordination."
   }
 ]
