@@ -8,7 +8,7 @@
       "D": "Updating the risk assessment"
     },
     "correct_answer": "B",
-    "explanation": "Test monitoring involves measuring actual progress against the planned progress and reporting deviations."
+    "explanation": "Test monitoring involves comparing actual progress to the planned progress and identifying any variances."
   },
   {
     "question": "What is the purpose of test control?",
@@ -19,7 +19,7 @@
       "D": "To write a final test summary report"
     },
     "correct_answer": "C",
-    "explanation": "Test control is the activity of taking corrective actions to bring testing back in line with the plan."
+    "explanation": "Test control is about taking corrective actions when deviations from the test plan are detected through monitoring."
   },
   {
     "question": "Which of the following is NOT a typical test control activity?",
@@ -30,7 +30,7 @@
       "D": "Writing automated test scripts"
     },
     "correct_answer": "D",
-    "explanation": "Writing automated test scripts is a test implementation activity, not test control."
+    "explanation": "Writing test scripts is part of test implementation, not test control."
   },
   {
     "question": "Test completion activities include all of the following EXCEPT:",
@@ -41,7 +41,7 @@
       "D": "Finalizing and closing incident reports"
     },
     "correct_answer": "C",
-    "explanation": "Logging new defects is part of test execution, not a test completion activity."
+    "explanation": "Logging new defects is a part of test execution, not test completion."
   },
   {
     "question": "Which document typically summarizes the results of the testing effort?",
@@ -52,7 +52,7 @@
       "D": "Incident report"
     },
     "correct_answer": "C",
-    "explanation": "The test summary report summarizes testing activities and results, including deviations and residual risks."
+    "explanation": "The test summary report provides an overview of test activities, coverage, results, and any remaining risks."
   },
   {
     "question": "Which of the following would most likely trigger test control actions?",
@@ -63,7 +63,7 @@
       "D": "Test summary report has been written"
     },
     "correct_answer": "C",
-    "explanation": "If defect counts exceed expectations, corrective actions may be required—this is a test control trigger."
+    "explanation": "A spike in defect count could indicate a quality issue and require test re-prioritization or plan updates."
   },
   {
     "question": "What is one of the final tasks during test completion?",
@@ -74,7 +74,7 @@
       "D": "Executing regression tests"
     },
     "correct_answer": "C",
-    "explanation": "Testware, such as test cases and logs, should be archived for future reference during test completion."
+    "explanation": "Archiving testware ensures traceability and reuse for future projects or audits."
   },
   {
     "question": "What is a typical deliverable of the test completion phase?",
@@ -85,7 +85,7 @@
       "D": "A new test plan"
     },
     "correct_answer": "C",
-    "explanation": "The test summary report is a key deliverable produced during test completion."
+    "explanation": "The test summary report is a formal deliverable summarizing what testing was done and the outcomes."
   },
   {
     "question": "Test monitoring typically involves tracking which of the following?",
@@ -96,7 +96,7 @@
       "D": "Stakeholder satisfaction"
     },
     "correct_answer": "A",
-    "explanation": "Test monitoring tracks planned vs. actual testing activities, such as coverage and progress."
+    "explanation": "Test monitoring compares actual progress against the plan to determine if adjustments are needed."
   },
   {
     "question": "Which metric is most useful during test monitoring?",
@@ -107,7 +107,7 @@
       "D": "Number of commits to the repository"
     },
     "correct_answer": "B",
-    "explanation": "Closed incident reports indicate progress in defect resolution and are useful in test monitoring."
+    "explanation": "Closed incident reports indicate progress and help assess how many known issues have been addressed."
   },
   {
     "question": "During test control, what might be modified if testing falls behind schedule?",
@@ -118,7 +118,7 @@
       "D": "The test plan"
     },
     "correct_answer": "D",
-    "explanation": "The test plan is updated to reflect revised schedules, scope, or priorities as part of test control."
+    "explanation": "The test plan can be adjusted to reflect new priorities, schedules, or resource changes during control."
   },
   {
     "question": "Why is it important to perform a retrospective or lessons-learned session during test completion?",
@@ -129,7 +129,7 @@
       "D": "To validate defects"
     },
     "correct_answer": "B",
-    "explanation": "Retrospectives help identify successes and improvement areas to enhance future testing efforts."
+    "explanation": "Lessons learned sessions are essential for improving future test activities based on experience."
   },
   {
     "question": "What activity during test completion supports future test planning?",
@@ -140,7 +140,7 @@
       "D": "Code walkthrough"
     },
     "correct_answer": "B",
-    "explanation": "Collected metrics during test completion provide valuable insights for planning future test efforts."
+    "explanation": "Collected metrics during test completion provide insights that inform more accurate future planning."
   },
   {
     "question": "What should be done with unresolved defects during test completion?",
@@ -151,7 +151,7 @@
       "D": "Automatically rejected"
     },
     "correct_answer": "C",
-    "explanation": "Unresolved defects should be documented as residual risks and communicated to stakeholders."
+    "explanation": "Unresolved defects should be recorded and reported as residual risks in the summary report."
   },
   {
     "question": "Which of the following actions is part of test control?",
@@ -162,6 +162,171 @@
       "D": "Writing detailed test procedures"
     },
     "correct_answer": "A",
-    "explanation": "Test control includes making adjustments like reallocating test resources to keep testing on track."
+    "explanation": "Test control includes making adjustments such as shifting test resources to high-risk or delayed areas."
+  },
+  {
+    "question": "Which of the following is a primary objective of test monitoring?",
+    "alternatives": {
+      "A": "To identify test conditions",
+      "B": "To assess the quality of the test object",
+      "C": "To measure test progress and efficiency",
+      "D": "To design test cases"
+    },
+    "correct_answer": "C",
+    "explanation": "Test monitoring involves tracking and measuring test activities to ensure they align with the test plan and to assess progress and efficiency."
+  },
+  {
+    "question": "During test control, which action is most appropriate if a critical defect is found late in the testing process?",
+    "alternatives": {
+      "A": "Defer the defect to the next release",
+      "B": "Stop testing immediately",
+      "C": "Reassess and adjust the test plan priorities",
+      "D": "Remove test cases related to the defect"
+    },
+    "correct_answer": "C",
+    "explanation": "Test control involves evaluating the impact of discovered defects and adjusting test priorities and plans accordingly to address critical issues effectively."
+  },
+  {
+    "question": "What is the main purpose of a test summary report?",
+    "alternatives": {
+      "A": "To detail the test design specifications",
+      "B": "To provide a comprehensive overview of the testing activities and outcomes",
+      "C": "To list all test cases executed",
+      "D": "To document individual test scripts"
+    },
+    "correct_answer": "B",
+    "explanation": "A test summary report offers stakeholders a consolidated view of the testing efforts, results, and any deviations from the plan."
+  },
+  {
+    "question": "Which metric is commonly used to monitor test progress?",
+    "alternatives": {
+      "A": "Number of test environments available",
+      "B": "Percentage of test cases executed",
+      "C": "Lines of code written",
+      "D": "Number of developers involved"
+    },
+    "correct_answer": "B",
+    "explanation": "Tracking the percentage of test cases executed helps in assessing how much of the planned testing has been completed."
+  },
+  {
+    "question": "In test control, what is the significance of revisiting risk assessments?",
+    "alternatives": {
+      "A": "To eliminate the need for further testing",
+      "B": "To ensure that testing efforts are aligned with the current risk landscape",
+      "C": "To reduce the number of test cases",
+      "D": "To assign blame for defects found"
+    },
+    "correct_answer": "B",
+    "explanation": "Regularly updating risk assessments ensures that testing focuses on areas of highest risk, especially as new information emerges during the project."
+  },
+  {
+    "question": "Which activity is typically performed during test completion?",
+    "alternatives": {
+      "A": "Executing test cases",
+      "B": "Designing new test scripts",
+      "C": "Analyzing lessons learned to improve future projects",
+      "D": "Identifying test conditions"
+    },
+    "correct_answer": "C",
+    "explanation": "Test completion involves reflecting on the testing process to gather insights and lessons that can enhance future testing efforts."
+  },
+  {
+    "question": "What role does defect density play in test monitoring?",
+    "alternatives": {
+      "A": "It determines the number of test cases to be executed",
+      "B": "It helps assess the quality of the software by indicating the number of defects relative to the size of the software",
+      "C": "It measures the speed of test execution",
+      "D": "It identifies the complexity of test scripts"
+    },
+    "correct_answer": "B",
+    "explanation": "Defect density provides insight into the software's quality by showing how many defects exist in a given size of code or functionality."
+  },
+  {
+    "question": "During test control, if testing is behind schedule, which action is most appropriate?",
+    "alternatives": {
+      "A": "Add more testers without evaluating the impact",
+      "B": "Skip remaining test cases",
+      "C": "Analyze the cause of the delay and adjust the test plan accordingly",
+      "D": "Ignore the schedule and continue as planned"
+    },
+    "correct_answer": "C",
+    "explanation": "Effective test control requires understanding the reasons for delays and making informed adjustments to the test plan to address them."
+  },
+  {
+    "question": "Which document is essential for communicating test progress to stakeholders?",
+    "alternatives": {
+      "A": "Test case specification",
+      "B": "Test progress report",
+      "C": "Test environment setup guide",
+      "D": "Test data requirements document"
+    },
+    "correct_answer": "B",
+    "explanation": "A test progress report provides stakeholders with up-to-date information on testing activities, progress, and any issues encountered."
+  },
+  {
+    "question": "What is the primary focus during test completion activities?",
+    "alternatives": {
+      "A": "Identifying new test cases",
+      "B": "Closing outstanding defects",
+      "C": "Ensuring all test environments are decommissioned",
+      "D": "Documenting and communicating the overall test results and experiences"
+    },
+    "correct_answer": "D",
+    "explanation": "Test completion focuses on summarizing the testing efforts, results, and lessons learned to inform stakeholders and improve future projects."
+  },
+  {
+    "question": "How does test monitoring contribute to effective test management?",
+    "alternatives": {
+      "A": "By eliminating the need for test planning",
+      "B": "By providing real-time data on test progress and quality",
+      "C": "By reducing the number of defects",
+      "D": "By increasing the number of test cases executed"
+    },
+    "correct_answer": "B",
+    "explanation": "Test monitoring offers real-time insights into testing activities, enabling managers to make informed decisions and adjustments as needed."
+  },
+  {
+    "question": "Which of the following is a key benefit of test control?",
+    "alternatives": {
+      "A": "It ensures that all test cases are automated",
+      "B": "It allows for proactive adjustments to the test plan based on actual progress",
+      "C": "It guarantees that no defects will be found",
+      "D": "It eliminates the need for test monitoring"
+    },
+    "correct_answer": "B",
+    "explanation": "Test control enables timely modifications to the test strategy and plan to address deviations and ensure testing objectives are met."
+  },{
+    "question": "Which type of metrics would be most useful during test monitoring?",
+    "alternatives": {
+      "A": "Requirements traceability metrics",
+      "B": "Test case execution status",
+      "C": "Customer satisfaction scores",
+      "D": "Code complexity metrics"
+    },
+    "correct_answer": "B",
+    "explanation": "Test case execution status (e.g., passed, failed, blocked) is key to understanding test progress and identifying problem areas in real time."
+  },
+  {
+    "question": "Which of the following is typically part of a lessons learned meeting in the test completion phase?",
+    "alternatives": {
+      "A": "Planning new test cases",
+      "B": "Identifying what went well and what could be improved",
+      "C": "Reviewing low-level design",
+      "D": "Writing new user stories"
+    },
+    "correct_answer": "B",
+    "explanation": "A lessons learned (retrospective) meeting is held to reflect on the testing process and identify improvements for future projects."
+  },
+  {
+    "question": "Why is updating the test summary report important before closing test completion?",
+    "alternatives": {
+      "A": "To describe how many developers contributed",
+      "B": "To communicate final results and any unresolved risks or defects",
+      "C": "To list marketing feedback",
+      "D": "To prepare user training documentation"
+    },
+    "correct_answer": "B",
+    "explanation": "The final test summary report must reflect the full scope of testing outcomes, including open risks, coverage, and defect status, to inform stakeholders clearly."
   }
 ]
+ 

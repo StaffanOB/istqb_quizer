@@ -1,0 +1,156 @@
+[
+  {
+    "question": "What is one primary reason that software testing is necessary?",
+    "alternatives": {
+      "A": "To increase the complexity of the software",
+      "B": "To ensure that the software meets user requirements and is defect-free",
+      "C": "To decrease the cost of development by writing more code",
+      "D": "To delay the release of the software for better timing"
+    },
+    "correct_answer": "B",
+    "explanation": "Testing is essential to verify that the software functions as intended and meets user requirements, ensuring reliability and quality."
+  },
+  {
+    "question": "Which of the following best describes the role of testing in software development?",
+    "alternatives": {
+      "A": "Testing is only performed at the end of the development cycle",
+      "B": "Testing helps identify defects early, reducing the cost of fixing them",
+      "C": "Testing is optional if the code is written by experienced developers",
+      "D": "Testing is primarily used to demonstrate that the software works perfectly"
+    },
+    "correct_answer": "B",
+    "explanation": "Early testing helps detect defects when they are less costly to fix, contributing to more efficient and effective software development."
+  },
+  {
+    "question": "How does software testing contribute to customer satisfaction?",
+    "alternatives": {
+      "A": "By adding more features to the software",
+      "B": "By ensuring the software is delivered late",
+      "C": "By ensuring the software is reliable and meets user expectations",
+      "D": "By reducing the need for user training"
+    },
+    "correct_answer": "C",
+    "explanation": "Reliable software that meets user expectations leads to higher customer satisfaction and trust in the product."
+  },
+  {
+    "question": "What can be the consequence of inadequate software testing?",
+    "alternatives": {
+      "A": "Increased user confidence",
+      "B": "Reduced development costs",
+      "C": "Higher risk of software failures in production",
+      "D": "Shorter time to market"
+    },
+    "correct_answer": "C",
+    "explanation": "Inadequate testing can lead to undetected defects, resulting in software failures that may cause financial and reputational damage."
+  },
+  {
+    "question": "Why is it important to involve testers early in the software development life cycle?",
+    "alternatives": {
+      "A": "To allow developers to focus solely on coding",
+      "B": "To identify defects in requirements and design phases",
+      "C": "To shorten the overall development time",
+      "D": "To reduce the need for documentation"
+    },
+    "correct_answer": "B",
+    "explanation": "Early involvement of testers helps in detecting defects in the initial stages, preventing costly fixes later in the development process."
+  },
+  {
+    "question": "Which of the following is a key benefit of performing software testing?",
+    "alternatives": {
+      "A": "It guarantees the software is completely free of defects",
+      "B": "It ensures that all possible input combinations are tested",
+      "C": "It provides confidence in the software's quality and performance",
+      "D": "It eliminates the need for user feedback"
+    },
+    "correct_answer": "C",
+    "explanation": "Testing provides assurance that the software meets quality standards and performs as expected under various conditions."
+  },
+  {
+    "question": "What role does testing play in risk management?",
+    "alternatives": {
+      "A": "It increases the inherent risks in software development",
+      "B": "It helps identify and mitigate potential failures before deployment",
+      "C": "It transfers all risks to the testing team",
+      "D": "It eliminates the need for risk assessment"
+    },
+    "correct_answer": "B",
+    "explanation": "Testing identifies potential issues that could lead to failures, allowing teams to address risks proactively before the software is released."
+  },
+  {
+    "question": "How does software testing affect maintenance costs?",
+    "alternatives": {
+      "A": "It increases maintenance costs by adding more test cases",
+      "B": "It has no impact on maintenance costs",
+      "C": "It reduces maintenance costs by identifying defects early",
+      "D": "It shifts maintenance costs to the testing phase"
+    },
+    "correct_answer": "C",
+    "explanation": "Early detection of defects through testing reduces the likelihood of costly maintenance efforts after deployment."
+  },
+  {
+    "question": "Why is exhaustive testing considered impractical?",
+    "alternatives": {
+      "A": "Because it is too expensive and time-consuming",
+      "B": "Because it guarantees defect-free software",
+      "C": "Because it focuses only on critical paths",
+      "D": "Because it requires no automation"
+    },
+    "correct_answer": "A",
+    "explanation": "Testing all possible inputs and scenarios is not feasible due to resource constraints; therefore, risk-based and prioritized testing approaches are used."
+  },
+  {
+    "question": "In what way does software testing support compliance with industry standards?",
+    "alternatives": {
+      "A": "By ensuring that the software includes all requested features",
+      "B": "By verifying that the software adheres to legal and regulatory requirements",
+      "C": "By reducing the need for documentation",
+      "D": "By accelerating the development process"
+    },
+    "correct_answer": "B",
+    "explanation": "Testing verifies that the software complies with relevant standards and regulations, which is crucial in industries like healthcare and finance."
+  },
+  {
+    "question": "How does testing contribute to the improvement of software design?",
+    "alternatives": {
+      "A": "By allowing developers to write code without constraints",
+      "B": "By identifying design flaws early through reviews and static testing",
+      "C": "By focusing solely on code execution",
+      "D": "By delaying testing until after deployment"
+    },
+    "correct_answer": "B",
+    "explanation": "Early testing activities, such as design reviews, help detect and correct design issues before they are implemented in code."
+  },
+  {
+    "question": "What is the significance of defect clustering in software testing?",
+    "alternatives": {
+      "A": "It indicates that defects are evenly distributed across the software",
+      "B": "It suggests that a small number of modules contain most of the defects",
+      "C": "It shows that defects are rare in complex systems",
+      "D": "It implies that all modules have an equal number of defects"
+    },
+    "correct_answer": "B",
+    "explanation": "Defect clustering refers to the phenomenon where a few modules are responsible for the majority of defects, highlighting areas that may require more rigorous testing."
+  },
+  {
+    "question": "Why can software appear to work correctly and still have defects?",
+    "alternatives": {
+      "A": "Because testing is only done at the end",
+      "B": "Because not all users use the system the same way",
+      "C": "Because some defects are intentionally hidden",
+      "D": "Because developers test only what they develop"
+    },
+    "correct_answer": "B",
+    "explanation": "Software may pass tests under normal conditions but still contain defects that appear under different user behaviors, environments, or edge cases."
+  },
+  {
+    "question": "What is one reason testing should be done even if no defects are expected?",
+    "alternatives": {
+      "A": "To waste time before release",
+      "B": "To document that no bugs exist",
+      "C": "To increase the cost of the project",
+      "D": "To confirm confidence in system behavior and identify unknown risks"
+    },
+    "correct_answer": "D",
+    "explanation": "Testing provides assurance that the system behaves as expected and can uncover risks or issues not anticipated during development."
+  }
+]

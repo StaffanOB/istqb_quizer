@@ -1,0 +1,156 @@
+[
+  {
+    "question": "What is the primary objective of software testing?",
+    "alternatives": {
+      "A": "To debug the code",
+      "B": "To validate that the software meets requirements",
+      "C": "To assess the performance of the software",
+      "D": "To demonstrate the absence of defects"
+    },
+    "correct_answer": "B",
+    "explanation": "The main goal of software testing is to ensure that the software functions as intended and meets all specified requirements."
+  },
+  {
+    "question": "Which of the following is a key principle of testing?",
+    "alternatives": {
+      "A": "Exhaustive testing is possible",
+      "B": "Defect clustering",
+      "C": "Automated testing eliminates the need for manual testing",
+      "D": "Testing can prove that a program is error-free"
+    },
+    "correct_answer": "B",
+    "explanation": "Defect clustering suggests that a small number of modules contain most of the defects detected, highlighting areas that may require more rigorous testing."
+  },
+  {
+    "question": "What does 'exhaustive testing' refer to?",
+    "alternatives": {
+      "A": "Testing all possible inputs and scenarios",
+      "B": "Testing the most critical parts of the application",
+      "C": "Automating all test cases",
+      "D": "Performing testing without any tools"
+    },
+    "correct_answer": "A",
+    "explanation": "Exhaustive testing involves testing all possible data inputs and scenarios, which is generally impractical due to resource constraints."
+  },
+  {
+    "question": "Which of the following best describes static testing?",
+    "alternatives": {
+      "A": "Executing the code to find defects",
+      "B": "Manually checking code, requirements, or design documents",
+      "C": "Using automated tools to execute test cases",
+      "D": "Testing the system's performance under load"
+    },
+    "correct_answer": "B",
+    "explanation": "Static testing involves reviewing and analyzing documentation and code without executing the program, aiming to find errors early in the development process."
+  },
+  {
+    "question": "In the context of testing, what is a 'failure'?",
+    "alternatives": {
+      "A": "A human error in the code",
+      "B": "A flaw in the software's design",
+      "C": "The manifestation of a defect during execution",
+      "D": "A deviation from the test plan"
+    },
+    "correct_answer": "C",
+    "explanation": "A failure occurs when a defect in the software is executed, causing the system to deviate from expected behavior."
+  },
+  {
+    "question": "What is the difference between verification and validation in software testing?",
+    "alternatives": {
+      "A": "Verification ensures the product is built correctly; validation ensures the right product is built",
+      "B": "Verification is dynamic testing; validation is static testing",
+      "C": "Verification is done by developers; validation is done by testers",
+      "D": "There is no difference between verification and validation"
+    },
+    "correct_answer": "A",
+    "explanation": "Verification checks if the product meets specified requirements (are we building the product right?), while validation checks if the product meets user needs (are we building the right product?)."
+  },
+  {
+    "question": "Which testing level focuses on interactions between integrated components?",
+    "alternatives": {
+      "A": "Unit testing",
+      "B": "Integration testing",
+      "C": "System testing",
+      "D": "Acceptance testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Integration testing evaluates the interfaces and interactions between integrated components to detect issues in their interactions."
+  },
+  {
+    "question": "What is regression testing?",
+    "alternatives": {
+      "A": "Testing to determine if new defects are introduced after changes",
+      "B": "Testing the system's response under heavy loads",
+      "C": "Testing to ensure the system meets user requirements",
+      "D": "Testing individual units or components in isolation"
+    },
+    "correct_answer": "A",
+    "explanation": "Regression testing involves re-running previously conducted tests to ensure that recent code changes haven't adversely affected existing functionalities."
+  },
+  {
+    "question": "Which of the following is an example of non-functional testing?",
+    "alternatives": {
+      "A": "Unit testing",
+      "B": "Integration testing",
+      "C": "Performance testing",
+      "D": "Regression testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Performance testing assesses how the system performs under specific conditions, such as load and stress, focusing on non-functional attributes like responsiveness and stability."
+  },
+  {
+    "question": "What is the primary purpose of acceptance testing?",
+    "alternatives": {
+      "A": "To verify that the system works in the development environment",
+      "B": "To ensure the system is ready for operational use",
+      "C": "To find defects in the integration of modules",
+      "D": "To test individual components in isolation"
+    },
+    "correct_answer": "B",
+    "explanation": "Acceptance testing determines whether the system meets the business requirements and is ready for deployment to end-users."
+  },
+  {
+    "question": "Which of the following best describes white-box testing?",
+    "alternatives": {
+      "A": "Testing based on the external specifications of the software",
+      "B": "Testing without knowledge of the internal workings of the application",
+      "C": "Testing that involves understanding the internal structure and logic of the code",
+      "D": "Testing performed by end-users during acceptance testing"
+    },
+    "correct_answer": "C",
+    "explanation": "White-box testing involves testing the internal structures or workings of an application, requiring knowledge of the code and logic."
+  },
+  {
+    "question": "What is the role of a test oracle in software testing?",
+    "alternatives": {
+      "A": "A tool that manages test cases and execution",
+      "B": "A mechanism to determine expected outcomes of tests",
+      "C": "A database of known software defects",
+      "D": "A person who predicts the success of the software"
+    },
+    "correct_answer": "B",
+    "explanation": "A test oracle is a source of expected results for test cases, helping testers determine if the actual outcomes match the expected ones."
+  },
+{
+    "question": "Which of the following is a common objective of testing?",
+    "alternatives": {
+      "A": "To delay the release of the software",
+      "B": "To find and prevent defects",
+      "C": "To ensure developers write less code",
+      "D": "To increase the number of features"
+    },
+    "correct_answer": "B",
+    "explanation": "A key goal of testing is to detect defects early and help prevent them from reaching production, thereby improving software quality."
+  },
+  {
+    "question": "What is the relationship between testing and quality assurance?",
+    "alternatives": {
+      "A": "Testing and QA are completely unrelated",
+      "B": "Testing is a part of quality assurance",
+      "C": "QA is a subset of testing",
+      "D": "QA focuses only on user interface testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Testing is one of many activities under the umbrella of quality assurance, which includes process improvement, reviews, and defect prevention."
+  }
+]

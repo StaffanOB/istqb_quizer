@@ -163,5 +163,170 @@
     },
     "correct_answer": "B",
     "explanation": "Adding extra testers can help reduce the impact of a risk such as schedule slippage, making it a mitigation strategy."
+  },
+  {
+    "question": "Which technique would you recommend for risk analysis in an agile project with informal requirements and fast iterations?",
+    "alternatives": {
+      "A": "Hazard analysis",
+      "B": "Pragmatic Risk Analysis and Management",
+      "C": "Systematic Software Testing",
+      "D": "Fault tree analysis"
+    },
+    "correct_answer": "B",
+    "explanation": "Pragmatic Risk Analysis and Management is suitable for agile projects with informal requirements and rapid iterations, as it allows for quick identification and prioritization of risks. :contentReference[oaicite:0]{index=0}"
+  },
+  {
+    "question": "According to the ISTQB Glossary, a product risk is related to which of the following?",
+    "alternatives": {
+      "A": "Control of the test project",
+      "B": "The test object",
+      "C": "A single test item",
+      "D": "The testing schedule"
+    },
+    "correct_answer": "B",
+    "explanation": "A product risk pertains to potential issues in the test object that could lead to defects or failures in the software. :contentReference[oaicite:1]{index=1}"
+  },
+  {
+    "question": "Which of the following is a key aspect of risk-based testing?",
+    "alternatives": {
+      "A": "Testing all components equally",
+      "B": "Prioritizing testing efforts based on risk assessment",
+      "C": "Eliminating the need for regression testing",
+      "D": "Focusing solely on functional testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Risk-based testing involves prioritizing testing activities based on the assessment of risks, ensuring that the most critical areas are tested first."
+  },
+  {
+    "question": "What is the primary benefit of involving testers in risk identification during the early stages of a project?",
+    "alternatives": {
+      "A": "It allows for the creation of more test cases",
+      "B": "It helps in identifying potential issues before they become costly",
+      "C": "It reduces the need for user acceptance testing",
+      "D": "It accelerates the development process"
+    },
+    "correct_answer": "B",
+    "explanation": "Early involvement of testers in risk identification helps detect potential issues early, reducing the cost and effort required to address them later."
+  },
+  {
+    "question": "Which of the following is an example of a mitigation strategy in risk management?",
+    "alternatives": {
+      "A": "Accepting the risk and doing nothing",
+      "B": "Transferring the risk to another party",
+      "C": "Implementing measures to reduce the likelihood or impact of the risk",
+      "D": "Ignoring the risk as it is unlikely to occur"
+    },
+    "correct_answer": "C",
+    "explanation": "Mitigation involves implementing measures to reduce the likelihood or impact of a risk, thereby minimizing its potential effect on the project."
+  },
+  {
+    "question": "In the context of risk management, what does 'risk likelihood' refer to?",
+    "alternatives": {
+      "A": "The potential impact of a risk",
+      "B": "The probability of a risk occurring",
+      "C": "The time frame in which a risk might occur",
+      "D": "The number of risks identified in a project"
+    },
+    "correct_answer": "B",
+    "explanation": "Risk likelihood refers to the probability or chance that a specific risk event will occur."
+  },
+  {
+    "question": "Which of the following is a characteristic of a well-defined risk?",
+    "alternatives": {
+      "A": "It is vague and general",
+      "B": "It has a clear cause, event, and effect",
+      "C": "It cannot be measured or assessed",
+      "D": "It is always negative"
+    },
+    "correct_answer": "B",
+    "explanation": "A well-defined risk clearly articulates the cause, the event that may occur, and the potential effect on the project or product."
+  },
+  {
+    "question": "What role does a contingency plan play in risk management?",
+    "alternatives": {
+      "A": "It identifies potential risks",
+      "B": "It outlines actions to take if a risk materializes",
+      "C": "It eliminates the need for risk assessment",
+      "D": "It transfers the risk to another party"
+    },
+    "correct_answer": "B",
+    "explanation": "A contingency plan specifies the actions to be taken if a risk event occurs, ensuring preparedness and a structured response."
+  },
+  {
+    "question": "Which of the following best describes 'risk exposure'?",
+    "alternatives": {
+      "A": "The total number of risks in a project",
+      "B": "The potential loss multiplied by the probability of a risk occurring",
+      "C": "The time remaining before a risk might occur",
+      "D": "The number of stakeholders affected by a risk"
+    },
+    "correct_answer": "B",
+    "explanation": "Risk exposure is calculated by multiplying the potential impact (loss) of a risk by its probability of occurrence, providing a quantitative measure of the risk."
+  },
+  {
+    "question": "Why is it important to review and update risk assessments throughout a project?",
+    "alternatives": {
+      "A": "Risks remain constant during a project",
+      "B": "New risks can emerge, and existing risks can change in severity",
+      "C": "It ensures that all risks are eliminated",
+      "D": "It satisfies regulatory requirements"
+    },
+    "correct_answer": "B",
+    "explanation": "Regularly reviewing and updating risk assessments is crucial as new risks may arise, and the severity or likelihood of existing risks may change over time."
+  },
+  {
+    "question": "Which of the following is a product risk in software testing?",
+    "alternatives": {
+      "A": "Delays in the testing schedule",
+      "B": "A defect that causes system crashes under specific conditions",
+      "C": "Insufficient funding for the testing phase",
+      "D": "Lack of skilled testers available for the project"
+    },
+    "correct_answer": "B",
+    "explanation": "A product risk pertains to potential defects or issues within the software product that could lead to failures or suboptimal performance."
+  },
+  {
+    "question": "What is the purpose of a risk register?",
+    "alternatives": {
+      "A": "To document all test cases and their results",
+      "B": "To record identified risks, their analysis, and planned responses",
+      "C": "To schedule testing activities",
+      "D": "To track defects found during testing"
+    },
+    "correct_answer": "B",
+    "explanation": "A risk register is a tool used to document all identified risks, their assessment, and the strategies planned to address them."
+  },
+  {
+    "question": "What is a key difference between product risk and project risk?",
+    "alternatives": {
+      "A": "Project risks only apply during testing",
+      "B": "Product risks are related to operational problems, project risks to test management issues",
+      "C": "Product risks focus on schedules and resources",
+      "D": "There is no difference"
+    },
+    "correct_answer": "B",
+    "explanation": "Product risks are associated with the software itself (e.g., functional failures), while project risks relate to issues with the testing process or management (e.g., delays or staffing problems)."
+  },
+  {
+    "question": "Which of the following is a valid method of risk prioritization?",
+    "alternatives": {
+      "A": "Alphabetical ordering",
+      "B": "Risk exposure (impact × likelihood)",
+      "C": "Random sampling",
+      "D": "Grouping by test case ID"
+    },
+    "correct_answer": "B",
+    "explanation": "Prioritizing risks by risk exposure—calculated as impact × likelihood—is a standard method used in risk-based testing strategies."
+  },
+  {
+    "question": "What is the benefit of risk-based testing for test planning?",
+    "alternatives": {
+      "A": "It allows all test cases to be executed simultaneously",
+      "B": "It helps allocate testing effort based on business and technical risk",
+      "C": "It avoids the need for regression testing",
+      "D": "It eliminates the need for stakeholder involvement"
+    },
+    "correct_answer": "B",
+    "explanation": "Risk-based testing supports efficient test planning by focusing effort on areas of highest risk, ensuring critical features receive more thorough testing."
   }
 ]
