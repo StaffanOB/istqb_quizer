@@ -6,6 +6,8 @@ import signal
 import sys
 from datetime import datetime
 import textwrap
+import logging
+from logging.handlers import TimedRotatingFileHandler
 
 # Track stats
 correct = 0
@@ -16,6 +18,29 @@ wrong_details = []
 def clear_screen():
     os.system("cls" if platform.system() == "Windows" else "clear")
 
+def setup_logger():
+    log_dir = "logs"
+    os.makedirs(log_dir, exist_ok=True)
+
+    log_filename = os.path.join(log_dir, "quiz_log.log")
+
+    logger = logging.getLogger("QuizLogger")
+    logger.setLevel(logging.INFO)
+
+    # Avoid duplicate handlers if setup is called multiple times
+    if not logger.handlers:
+        handler = TimedRotatingFileHandler(
+            log_filename,
+            when="midnight",
+            interval=1,
+            backupCount=7,
+            encoding="utf-8"
+        )
+        formatter = logging.Formatter('%(asctime)s | %(message)s')
+        handler.setFormatter(formatter)
+        logger.addHandler(handler)
+
+    return logger
 
 def list_json_files(directory="questions"):
     if not os.path.exists(directory):
@@ -29,7 +54,7 @@ def list_json_files(directory="questions"):
 
 def load_questions(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
-        questions = load_questions(filepath)
+        # questions = load_questions(filepath)  # Removed recursive call
         total_questions = len(questions)
         return json.load(f)
 
@@ -190,13 +215,14 @@ def print_banner():
     An ISTQB Practice Quizzer
     """)
 
+
 def main():
     signal.signal(signal.SIGINT, graceful_exit)
 
     clear_screen()
     print_banner()  # Show ASCII logo
 
-    print("📂 Available quiz files:\n")
+    print("📂 Available quiz files: ")
     json_files = list_json_files("questions")
     if not json_files:
         print("❌ No JSON quiz files found in the 'questions/' directory.")
@@ -207,7 +233,7 @@ def main():
 
     while True:
         try:
-            selected = int(input("\nEnter the number of the quiz file to load: ")) - 1
+            selected = int(input(" Enter the number of the quiz file to load: ")) - 1
             if 0 <= selected < len(json_files):
                 break
             else:
@@ -216,13 +242,92 @@ def main():
             print("Please enter a number.")
 
     filepath = os.path.join("questions", json_files[selected])
+    quiz_name = json_files[selected][:-5]
+    logger = setup_logger()
+    logger.info(f"STARTING QUIZ from file: {json_files[selected]}")
+
+    with open(filepath, "r", encoding="utf-8") as f:
+        questions = json.load(f)
+
+    total_questions = len(questions)
 
     for idx, q in enumerate(questions):
-        ask_question(q, idx + 1, total_questions)
+        clear_screen()
+        print(wrap_text(f"📝 Question {idx + 1} of {total_questions}", 120))
+        print(wrap_text(q['question'], 120))
+        print("")  # blank line before alternatives
+        for key, val in q['alternatives'].items():
+            print(wrap_text(f"  {key}. {val}", 120))
+
+        first_attempt = True
+        attempted = False
+        answered = False
+        counted_as_wrong = False
+
+        while not answered:
+            print("")  # Blank line before input
+            answer = input("Your answer (A/B/C/D), or 's' to skip: ").strip().upper()
+
+            if answer == 'S':
+                if not attempted:
+                    global skipped
+                    skipped += 1
+                    print("⏭️ Skipped.")
+                    logger.info(f"Question {idx + 1}: Skipped")
+                else:
+                    print("⏭️ Skipped after attempting. Not counted as skipped.")
+                answered = True
+
+            elif answer == q['correct_answer']:
+                if first_attempt:
+                    global correct
+                    correct += 1
+                    print("✅ Correct on first try!")
+                    logger.info(f"Question {idx + 1}: Selected: {answer} | Correct on first try")
+                else:
+                    global wrong
+                    if not counted_as_wrong:
+                        wrong += 1
+                        counted_as_wrong = True
+                        wrong_details.append({
+                            "number": idx + 1,
+                            "question": q['question'],
+                            "correct_answer": q['correct_answer'],
+                            "explanation": q.get("explanation")
+                        })
+                    print("✅ Correct (but not counted as correct – previous wrong attempt)")
+                    logger.info(f"Question {idx + 1}: Selected: {answer} | Correct after wrong attempt")
+                answered = True
+
+            elif answer in q['alternatives']:
+                if first_attempt:
+                    first_attempt = False
+                if not counted_as_wrong:
+                    wrong += 1
+                    counted_as_wrong = True
+                    wrong_details.append({
+                        "number": idx + 1,
+                        "question": q['question'],
+                        "correct_answer": q['correct_answer'],
+                        "explanation": q.get("explanation")
+                    })
+                attempted = True
+                print("❌ Wrong answer. Try again or type 's' to skip.")
+                logger.info(f"Question {idx + 1}: Selected: {answer} | Wrong answer on first try")
+
+            else:
+                print("Invalid input. Please enter A, B, C, D, or 's'.")
+
+        explanation = q.get("explanation")
+        if explanation:
+            print("💡 Explanation:")
+            print(wrap_text(explanation, 120, indent="   "))
+        input("Press Enter to continue...")
 
     clear_screen()
     show_results()
-    write_results(quiz_name=json_files[selected][:-5])  # Strip .json from filename
+    write_results(quiz_name=quiz_name)
+
 
 if __name__ == "__main__":
     main()
