@@ -16,6 +16,7 @@ wrong_details = []
 def clear_screen():
     os.system("cls" if platform.system() == "Windows" else "clear")
 
+
 def list_json_files(directory="questions"):
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -28,6 +29,8 @@ def list_json_files(directory="questions"):
 
 def load_questions(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
+        questions = load_questions(filepath)
+        total_questions = len(questions)
         return json.load(f)
 
 def graceful_exit(signum, frame):
@@ -104,7 +107,6 @@ def ask_question(q, current_number, total):
     if explanation:
         print("\n💡 Explanation:")
         print(wrap_text(explanation, 120, indent="   "))
-
     input("\nPress Enter to continue...")
 
 def show_results(partial=False):
@@ -214,8 +216,6 @@ def main():
             print("Please enter a number.")
 
     filepath = os.path.join("questions", json_files[selected])
-    questions = load_questions(filepath)
-    total_questions = len(questions)
 
     for idx, q in enumerate(questions):
         ask_question(q, idx + 1, total_questions)
