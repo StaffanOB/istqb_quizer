@@ -1,0 +1,332 @@
+[
+  {
+    "question": "Which of the following is a black-box testing technique?",
+    "alternatives": {
+      "A": "Statement Testing",
+      "B": "Decision Testing",
+      "C": "Equivalence Partitioning",
+      "D": "Condition Coverage"
+    },
+    "correct_answer": "C",
+    "explanation": "Equivalence Partitioning is a black-box testing technique that divides input data into partitions of equivalent data from which test cases can be derived."
+  },
+  {
+    "question": "What is the main purpose of boundary value analysis?",
+    "alternatives": {
+      "A": "To test the internal structure of the component",
+      "B": "To test the behavior of the system at the edge of input ranges",
+      "C": "To ensure all statements in the code have been executed",
+      "D": "To assess the performance of the system under load"
+    },
+    "correct_answer": "B",
+    "explanation": "Boundary Value Analysis focuses on testing the boundaries between partitions, as errors often occur at the edges of input ranges."
+  },
+  {
+    "question": "Which test technique is most suitable for testing the interactions between different components?",
+    "alternatives": {
+      "A": "Equivalence Partitioning",
+      "B": "State Transition Testing",
+      "C": "Decision Table Testing",
+      "D": "Integration Testing"
+    },
+    "correct_answer": "D",
+    "explanation": "Integration Testing is aimed at testing the interfaces and interactions between integrated components or systems."
+  },
+  {
+    "question": "In which testing technique are test cases derived from the specification based on combinations of inputs?",
+    "alternatives": {
+      "A": "Decision Table Testing",
+      "B": "Use Case Testing",
+      "C": "Statement Testing",
+      "D": "Error Guessing"
+    },
+    "correct_answer": "A",
+    "explanation": "Decision Table Testing uses a table to represent combinations of inputs and their corresponding system behaviors, helping to ensure all possible combinations are tested."
+  },
+  {
+    "question": "Which of the following is an experience-based testing technique?",
+    "alternatives": {
+      "A": "Boundary Value Analysis",
+      "B": "Error Guessing",
+      "C": "State Transition Testing",
+      "D": "Use Case Testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Error Guessing relies on the tester's experience to anticipate and test areas of the application that are prone to errors."
+  },
+  {
+    "question": "What is the primary goal of use case testing?",
+    "alternatives": {
+      "A": "To test the system's internal logic",
+      "B": "To validate the system's behavior under various user scenarios",
+      "C": "To ensure all code statements are executed",
+      "D": "To assess the system's performance under stress"
+    },
+    "correct_answer": "B",
+    "explanation": "Use Case Testing focuses on validating that the system behaves as expected in real-world scenarios as described by use cases."
+  },
+  {
+    "question": "Which testing technique involves modeling the states and transitions of a system?",
+    "alternatives": {
+      "A": "State Transition Testing",
+      "B": "Decision Table Testing",
+      "C": "Equivalence Partitioning",
+      "D": "Boundary Value Analysis"
+    },
+    "correct_answer": "A",
+    "explanation": "State Transition Testing models a system's states and transitions to design test cases that cover state changes."
+  },
+  {
+    "question": "Which white-box testing technique ensures that each possible path through the code is executed at least once?",
+    "alternatives": {
+      "A": "Statement Testing",
+      "B": "Decision Testing",
+      "C": "Path Testing",
+      "D": "Condition Coverage"
+    },
+    "correct_answer": "C",
+    "explanation": "Path Testing aims to execute all possible paths in the code to ensure thorough testing of all control flows."
+  },
+  {
+    "question": "What is the main advantage of applying equivalence partitioning?",
+    "alternatives": {
+      "A": "It reduces the number of test cases needed by selecting representative values from each partition.",
+      "B": "It ensures that all possible input values are tested.",
+      "C": "It focuses testing on the boundaries between partitions.",
+      "D": "It is primarily used for testing state transitions."
+    },
+    "correct_answer": "A",
+    "explanation": "Equivalence Partitioning reduces the number of test cases by dividing input data into partitions and selecting representative values from each, assuming that all values in a partition will be treated similarly by the system."
+  },
+  {
+    "question": "Which testing technique is most appropriate when testing a system with a finite number of input combinations?",
+    "alternatives": {
+      "A": "Boundary Value Analysis",
+      "B": "Decision Table Testing",
+      "C": "State Transition Testing",
+      "D": "Error Guessing"
+    },
+    "correct_answer": "B",
+    "explanation": "Decision Table Testing is suitable for systems with a finite number of input combinations, as it systematically evaluates all possible combinations and their corresponding outputs."
+  },
+  {
+    "question": "In white-box testing, what does statement coverage measure?",
+    "alternatives": {
+      "A": "The percentage of decision outcomes tested",
+      "B": "The percentage of executable statements exercised by the test suite",
+      "C": "The number of paths executed in the code",
+      "D": "The number of conditions tested in each decision point"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement coverage measures the percentage of executable statements in the code that have been exercised by the test suite, indicating how thoroughly the code has been tested."
+  },
+  {
+    "question": "Which of the following is a characteristic of black-box testing?",
+    "alternatives": {
+      "A": "It requires knowledge of the internal code structure.",
+      "B": "It is based on the specifications and requirements of the system.",
+      "C": "It ensures all paths through the code are tested.",
+      "D": "It focuses on the logical flow of the program."
+    },
+    "correct_answer": "B",
+    "explanation": "Black-box testing focuses on testing the system based on its specifications and requirements, without any knowledge of the internal code structure."
+  },
+  {
+    "question": "Which of the following test techniques is most likely to be used to test business rules?",
+    "alternatives": {
+      "A": "Decision Table Testing",
+      "B": "Boundary Value Analysis",
+      "C": "State Transition Testing",
+      "D": "Statement Testing"
+    },
+    "correct_answer": "A",
+    "explanation": "Decision Table Testing is ideal for testing combinations of inputs and business rules, ensuring that each rule is triggered under the correct conditions."
+  },
+  {
+    "question": "Which of the following describes the relationship between test techniques and test design?",
+    "alternatives": {
+      "A": "Test techniques help decide when to stop testing",
+      "B": "Test techniques define how to automate tests",
+      "C": "Test techniques provide rules for designing test cases",
+      "D": "Test techniques are only applicable during maintenance testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Test techniques provide systematic methods or rules for designing test cases based on the structure or behavior of the system."
+  },
+  {
+    "question": "Which test design technique is most effective for testing input combinations that involve multiple variables?",
+    "alternatives": {
+      "A": "Equivalence Partitioning",
+      "B": "Boundary Value Analysis",
+      "C": "Decision Table Testing",
+      "D": "State Transition Testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Decision Table Testing is ideal for testing systems where the output depends on combinations of multiple input variables, as it systematically evaluates all possible combinations."
+  },
+  {
+    "question": "What is the primary objective of using statement coverage as a code coverage criterion?",
+    "alternatives": {
+      "A": "To ensure all possible paths through the code are executed",
+      "B": "To ensure all decision outcomes are tested",
+      "C": "To ensure every executable statement is executed at least once",
+      "D": "To ensure all loops are executed with boundary values"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement coverage aims to execute all executable statements in the code at least once, providing a measure of code exercised by the tests."
+  },
+  {
+    "question": "Which of the following is a characteristic of decision table testing?",
+    "alternatives": {
+      "A": "It is used to test the internal structure of the system",
+      "B": "It focuses on the flow of data through the system",
+      "C": "It is effective for testing combinations of conditions",
+      "D": "It is primarily used for performance testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Decision table testing is effective for testing systems where the output depends on combinations of conditions or inputs, as it systematically covers all possible combinations."
+  },
+  {
+    "question": "In boundary value analysis, which test cases are typically selected?",
+    "alternatives": {
+      "A": "Values just inside and just outside the boundary limits",
+      "B": "Random values within the input domain",
+      "C": "Typical values from each equivalence partition",
+      "D": "Combinations of inputs that interact with each other"
+    },
+    "correct_answer": "A",
+    "explanation": "Boundary value analysis focuses on testing values at the edges of equivalence partitions, including values just inside and just outside the boundary limits, where errors are more likely to occur."
+  },
+  {
+    "question": "Which test technique is most appropriate for testing the behavior of a system modeled by states and transitions?",
+    "alternatives": {
+      "A": "Use Case Testing",
+      "B": "State Transition Testing",
+      "C": "Decision Table Testing",
+      "D": "Equivalence Partitioning"
+    },
+    "correct_answer": "B",
+    "explanation": "State Transition Testing is used to test systems that can be modeled as finite state machines, focusing on valid and invalid transitions between states."
+  },
+  {
+    "question": "What is the main advantage of using experience-based testing techniques?",
+    "alternatives": {
+      "A": "They ensure complete coverage of the code",
+      "B": "They can quickly identify defects based on the tester's intuition and experience",
+      "C": "They are effective for testing complex algorithms",
+      "D": "They are based on formal specifications"
+    },
+    "correct_answer": "B",
+    "explanation": "Experience-based testing techniques leverage the tester's intuition and past experience to identify areas of the application that are prone to defects, allowing for quick detection of issues that may not be covered by formal techniques."
+  },
+  {
+    "question": "Which of the following is true about black-box testing techniques?",
+    "alternatives": {
+      "A": "They require knowledge of the internal code structure",
+      "B": "They are based on the specifications and requirements of the system",
+      "C": "They focus on the logical flow of the program",
+      "D": "They ensure all paths through the code are tested"
+    },
+    "correct_answer": "B",
+    "explanation": "Black-box testing techniques are based on the system's specifications and requirements, testing the functionality without any knowledge of the internal code structure."
+  },
+  {
+    "question": "In white-box testing, what does decision coverage measure?",
+    "alternatives": {
+      "A": "The percentage of executable statements exercised",
+      "B": "The percentage of decision outcomes (e.g., true/false) exercised",
+      "C": "The number of paths executed in the code",
+      "D": "The number of conditions tested in each decision point"
+    },
+    "correct_answer": "B",
+    "explanation": "Decision coverage measures the percentage of decision outcomes (such as true and false branches) that have been exercised by the test suite, ensuring that each decision point has been evaluated in both possible outcomes."
+  },
+  {
+    "question": "Which testing technique is most suitable for identifying defects at the boundaries of input domains?",
+    "alternatives": {
+      "A": "Equivalence Partitioning",
+      "B": "Boundary Value Analysis",
+      "C": "Decision Table Testing",
+      "D": "State Transition Testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Boundary Value Analysis is specifically designed to identify defects at the edges of input domains by testing values at, just below, and just above the boundary limits."
+  },
+  {
+    "question": "What is the primary purpose of use case testing?",
+    "alternatives": {
+      "A": "To test the system's internal logic",
+      "B": "To validate the system's behavior under various user scenarios",
+      "C": "To ensure all code statements are executed",
+      "D": "To assess the system's performance under stress"
+    },
+    "correct_answer": "B",
+    "explanation": "Use Case Testing focuses on validating that the system behaves as expected in real-world scenarios as described by use cases, ensuring that user interactions are properly handled."
+  },
+  {
+    "question": "Which of the following best describes error guessing?",
+    "alternatives": {
+      "A": "A systematic approach to identify errors based on code structure",
+      "B": "An approach that uses the tester's experience to anticipate and test areas prone to errors",
+      "C": "A technique that ensures all equivalence partitions are tested",
+      "D": "A formal method for deriving test cases from specifications"
+    },
+    "correct_answer": "B",
+    "explanation": "Error guessing relies on the tester's experience and intuition to anticipate areas of the application that are likely to contain defects and design tests accordingly."
+  },
+  {
+    "question": "Which of the following is most commonly used to derive test cases from a decision table?",
+    "alternatives": {
+      "A": "Each column in the table represents a test case",
+      "B": "Each row in the table represents a test case",
+      "C": "Each condition in the table represents a test case",
+      "D": "Only invalid combinations are used to derive test cases"
+    },
+    "correct_answer": "A",
+    "explanation": "In decision table testing, each column represents a unique combination of conditions and expected results, making it a suitable basis for test case derivation."
+  },
+  {
+    "question": "Which of the following is a valid goal of white-box testing?",
+    "alternatives": {
+      "A": "To check for missing functionalities",
+      "B": "To verify whether all user interactions are handled correctly",
+      "C": "To ensure all statements or branches in the code are executed",
+      "D": "To validate input combinations"
+    },
+    "correct_answer": "C",
+    "explanation": "White-box testing focuses on verifying internal code logic, such as ensuring that all paths, statements, and branches are executed during testing."
+  },
+  {
+    "question": "Which test technique is best suited for modeling and testing workflows or business processes?",
+    "alternatives": {
+      "A": "Decision Table Testing",
+      "B": "Use Case Testing",
+      "C": "Boundary Value Analysis",
+      "D": "Error Guessing"
+    },
+    "correct_answer": "B",
+    "explanation": "Use Case Testing helps ensure that business flows and user interactions are properly validated against system requirements."
+  },
+  {
+    "question": "Which of the following techniques would be most useful when there is no formal specification available?",
+    "alternatives": {
+      "A": "Decision Table Testing",
+      "B": "Use Case Testing",
+      "C": "Exploratory Testing",
+      "D": "Boundary Value Analysis"
+    },
+    "correct_answer": "C",
+    "explanation": "Exploratory Testing is an experience-based approach used when formal documentation is lacking, relying on the tester’s intuition and product knowledge."
+  },
+  {
+    "question": "What makes equivalence partitioning an effective technique for input domain testing?",
+    "alternatives": {
+      "A": "It tests all possible input values",
+      "B": "It selects representative test cases that assume similar behavior for grouped inputs",
+      "C": "It isolates and executes each branch of the code",
+      "D": "It uses combinations of valid and invalid states"
+    },
+    "correct_answer": "B",
+    "explanation": "Equivalence Partitioning divides input data into valid and invalid classes, allowing for efficient testing by assuming that all values in a class will be treated similarly by the system."
+  }
+]

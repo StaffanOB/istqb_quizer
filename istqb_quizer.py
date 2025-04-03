@@ -54,8 +54,6 @@ def list_json_files(directory="questions"):
 
 def load_questions(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
-        # questions = load_questions(filepath)  # Removed recursive call
-        total_questions = len(questions)
         return json.load(f)
 
 def graceful_exit(signum, frame):
@@ -66,73 +64,7 @@ def graceful_exit(signum, frame):
 def wrap_text(text, width=120, indent=""):
     return "\n".join(textwrap.wrap(text, width=width, initial_indent=indent, subsequent_indent=indent))
 
-def ask_question(q, current_number, total):
-    global correct, wrong, skipped, wrong_details
-    clear_screen()
-    print(wrap_text(f"📝 Question {current_number} of {total}", 120))
-    print(wrap_text(q['question'], 120))
-    print("")  # blank line before alternatives
-    for key, val in q['alternatives'].items():
-        print(wrap_text(f"  {key}. {val}", 120))
 
-    first_attempt = True
-    attempted = False
-    answered = False
-    counted_as_wrong = False
-
-    while not answered:
-        print("")  # Blank line before input
-        answer = input("Your answer (A/B/C/D), or 's' to skip: ").strip().upper()
-
-        if answer == 'S':
-            if not attempted:
-                skipped += 1
-                print("⏭️ Skipped.")
-            else:
-                print("⏭️ Skipped after attempting. Not counted as skipped.")
-            answered = True
-
-        elif answer == q['correct_answer']:
-            if first_attempt:
-                correct += 1
-                print("✅ Correct on first try!")
-            else:
-                if not counted_as_wrong:
-                    wrong += 1
-                    counted_as_wrong = True
-                    wrong_details.append({
-                        "number": current_number,
-                        "question": q['question'],
-                        "correct_answer": q['correct_answer'],
-                        "explanation": q.get("explanation")
-                    })
-                print("✅ Correct (but not counted as correct – previous wrong attempt)")
-            answered = True
-
-        elif answer in q['alternatives']:
-            if first_attempt:
-                first_attempt = False
-            if not counted_as_wrong:
-                wrong += 1
-                counted_as_wrong = True
-                wrong_details.append({
-                    "number": current_number,
-                    "question": q['question'],
-                    "correct_answer": q['correct_answer'],
-                    "explanation": q.get("explanation")
-                })
-            attempted = True
-            print("❌ Wrong answer. Try again or type 's' to skip.")
-
-        else:
-            print("Invalid input. Please enter A, B, C, D, or 's'.")
-
-    # Show explanation if available
-    explanation = q.get("explanation")
-    if explanation:
-        print("\n💡 Explanation:")
-        print(wrap_text(explanation, 120, indent="   "))
-    input("\nPress Enter to continue...")
 
 def show_results(partial=False):
     total = correct + wrong + skipped
@@ -204,15 +136,16 @@ def write_results(quiz_name):
 
     print(f"\n📄 Results saved to: {filepath}")
 
-#!/usr/bin/env python3
+def fortmat_fixed_width(number: int, width: int) -> str:
+    return str(number).rjust(width)
 
 def print_banner():
     print(r"""
 
-    ┳┏┓┏┳┓┏┓┳┓  ┏┓┳┳┳┏┓┏┓┏┓┳┓    
-    ┃┗┓ ┃ ┃┃┣┫  ┃┃┃┃┃┏┛┏┛┣ ┣┫    
+    ┳┏┓┏┳┓┏┓┳┓  ┏┓┳┳┳┏┓┏┓┏┓┳┓ 
+    ┃┗┓ ┃ ┃┃┣┫  ┃┃┃┃┃┏┛┏┛┣ ┣┫ 
     ┻┗┛ ┻ ┗┻┻┛  ┗┻┗┛┻┗┛┗┛┗┛┛┗ 
-    An ISTQB Practice Quizzer
+    An ISTQB Practice Quizzer 
     """)
 
 
@@ -222,18 +155,18 @@ def main():
     clear_screen()
     print_banner()  # Show ASCII logo
 
-    print("📂 Available quiz files: ")
+    print("Available quiz files: ")
     json_files = list_json_files("questions")
     if not json_files:
         print("❌ No JSON quiz files found in the 'questions/' directory.")
         return
 
     for i, file in enumerate(json_files):
-        print(f"{i + 1}. {file[:-5]}")  # Strip '.json' from display
+        print(f"  {fortmat_fixed_width(i + 1, 3)} | {file[:-5]}")  # Strip '.json' from display
 
     while True:
         try:
-            selected = int(input(" Enter the number of the quiz file to load: ")) - 1
+            selected = int(input("\nEnter the number of the quiz file to load: ")) - 1
             if 0 <= selected < len(json_files):
                 break
             else:
@@ -249,15 +182,21 @@ def main():
     with open(filepath, "r", encoding="utf-8") as f:
         questions = json.load(f)
 
+    # Normalize answers
+    for q in questions:
+        q['correct_answer'] = q['correct_answer'].upper()
+        q['alternatives'] = {k.upper(): v for k, v in q['alternatives'].items()}
+
     total_questions = len(questions)
 
     for idx, q in enumerate(questions):
+
         clear_screen()
         print(wrap_text(f"📝 Question {idx + 1} of {total_questions}", 120))
         print(wrap_text(q['question'], 120))
         print("")  # blank line before alternatives
         for key, val in q['alternatives'].items():
-            print(wrap_text(f"  {key}. {val}", 120))
+            print(wrap_text(f"  {key.upper()}. {val}", 120))
 
         first_attempt = True
         attempted = False
@@ -291,7 +230,7 @@ def main():
                         counted_as_wrong = True
                         wrong_details.append({
                             "number": idx + 1,
-                            "question": q['question'],
+                            "question": q['Question'],
                             "correct_answer": q['correct_answer'],
                             "explanation": q.get("explanation")
                         })

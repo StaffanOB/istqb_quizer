@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Which of the following roles is responsible for leading a formal review?",
+    "alternatives": {
+      "A": "Author",
+      "B": "Moderator",
+      "C": "Reviewer",
+      "D": "Scribe"
+    },
+    "correct_answer": "B",
+    "explanation": "In a formal review, the Moderator leads the review process, ensuring that it follows the defined procedures and objectives."
+  },
+  {
+    "question": "What is the primary purpose of an inspection in the review process?",
+    "alternatives": {
+      "A": "To provide an overview of the document to stakeholders",
+      "B": "To detect defects in the work product",
+      "C": "To approve the document for release",
+      "D": "To gather suggestions for process improvement"
+    },
+    "correct_answer": "B",
+    "explanation": "Inspections are a type of formal review with the main goal of detecting defects in the work product."
+  },
+  {
+    "question": "During a review meeting, who is responsible for documenting all identified defects?",
+    "alternatives": {
+      "A": "Author",
+      "B": "Moderator",
+      "C": "Scribe",
+      "D": "Reviewer"
+    },
+    "correct_answer": "C",
+    "explanation": "The Scribe (or Recorder) is responsible for documenting all identified defects and issues during the review meeting."
+  },
+  {
+    "question": "Which of the following is a benefit of performing peer reviews?",
+    "alternatives": {
+      "A": "Reduces the need for formal testing",
+      "B": "Ensures that the product is completely defect-free",
+      "C": "Identifies defects early, reducing the cost of fixing them later",
+      "D": "Eliminates the need for user acceptance testing"
+    },
+    "correct_answer": "C",
+    "explanation": "Peer reviews help in identifying defects early in the development process, which reduces the cost and effort required to fix them later."
+  },
+  {
+    "question": "In which phase of the formal review process are the entry criteria checked?",
+    "alternatives": {
+      "A": "Planning",
+      "B": "Kick-off",
+      "C": "Preparation",
+      "D": "Review meeting"
+    },
+    "correct_answer": "B",
+    "explanation": "During the Kick-off phase, the entry criteria are checked to ensure that the review can proceed as planned."
+  },
+  {
+    "question": "What distinguishes an informal review from a formal review?",
+    "alternatives": {
+      "A": "Informal reviews do not require a meeting",
+      "B": "Formal reviews are only conducted by external auditors",
+      "C": "Informal reviews have a defined process and roles",
+      "D": "Formal reviews follow a structured process with defined roles"
+    },
+    "correct_answer": "D",
+    "explanation": "Formal reviews follow a structured process with defined roles, whereas informal reviews are less structured and may not have formally assigned roles."
+  },
+  {
+    "question": "Which of the following is NOT a typical role in a formal review?",
+    "alternatives": {
+      "A": "Author",
+      "B": "Moderator",
+      "C": "Project Manager",
+      "D": "Reviewer"
+    },
+    "correct_answer": "C",
+    "explanation": "While the Project Manager may be interested in the outcomes of a review, they are not typically a formal role within the review process."
+  },
+  {
+    "question": "What is the main objective of a walkthrough?",
+    "alternatives": {
+      "A": "To evaluate the technical accuracy of the document",
+      "B": "To establish consensus on the document's content",
+      "C": "To train participants on the content of the document",
+      "D": "To detect defects in the document"
+    },
+    "correct_answer": "C",
+    "explanation": "Walkthroughs are often used to present the document to stakeholders, primarily for educational purposes and to gather feedback."
+  },
+  {
+    "question": "Which review type is characterized by the author leading the review session?",
+    "alternatives": {
+      "A": "Inspection",
+      "B": "Walkthrough",
+      "C": "Technical Review",
+      "D": "Informal Review"
+    },
+    "correct_answer": "B",
+    "explanation": "In a Walkthrough, the author leads the review session, guiding participants through the document to gather feedback and answer questions."
+  },
+  {
+    "question": "During which phase of a formal review are the documents distributed to the reviewers?",
+    "alternatives": {
+      "A": "Planning",
+      "B": "Kick-off",
+      "C": "Preparation",
+      "D": "Follow-up"
+    },
+    "correct_answer": "C",
+    "explanation": "During the Preparation phase, the work product is distributed to the reviewers, who then examine it individually before the review meeting."
+  },
+  {
+    "question": "What is the role of the author during a formal review?",
+    "alternatives": {
+      "A": "To identify defects in the document",
+      "B": "To correct defects found during the review",
+      "C": "To moderate the review meeting",
+      "D": "To document the results of the review"
+    },
+    "correct_answer": "B",
+    "explanation": "The author's primary role is to correct defects found during the review process."
+  },
+  {
+    "question": "Which of the following is a key success factor for reviews?",
+    "alternatives": {
+      "A": "Conducting reviews only after code implementation",
+      "B": "Ensuring that managers lead all review meetings",
+      "C": "Defining clear objectives and procedures for the review",
+      "D": "Limiting the number of reviewers to two"
+    },
+    "correct_answer": "C",
+    "explanation": "Defining clear objectives and procedures helps ensure that the review process is effective and that all participants understand their roles and responsibilities."
+  },
+  {
+    "question": "Which type of review is typically led by a trained moderator and follows a formal process?",
+    "alternatives": {
+      "A": "Informal Review",
+      "B": "Walkthrough",
+      "C": "Inspection",
+      "D": "Technical Review"
+    },
+    "correct_answer": "C",
+    "explanation": "Inspections are formal reviews led by a trained moderator and follow a structured process to detect defects."
+  },
+  {
+    "question": "What is typically the final step of the formal review process?",
+    "alternatives": {
+      "A": "Kick-off",
+      "B": "Preparation",
+      "C": "Follow-up",
+      "D": "Review meeting"
+    },
+    "correct_answer": "C",
+    "explanation": "The Follow-up phase ensures that all defects found during the review have been addressed and that the review is properly closed."
+  },
+  {
+    "question": "Which of the following best describes the goal of static testing techniques such as reviews?",
+    "alternatives": {
+      "A": "To execute the software with test cases",
+      "B": "To verify code syntax and compilation",
+      "C": "To find defects without executing the code",
+      "D": "To simulate user behavior through tools"
+    },
+    "correct_answer": "C",
+    "explanation": "Static testing techniques such as reviews aim to find defects in work products like documents or code without executing the program."
+  }
+]
