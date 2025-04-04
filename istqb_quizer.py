@@ -209,7 +209,6 @@ def main():
 
         while not answered:
             print("")  # Blank line before input
-            #answer = input("Your answer (A/B/C/D), or 's' to skip: ").strip().upper()
             answer = input("Your answer (A/B/C/D or multiple like 'A,C'), or 's' to skip: ").strip().upper()
             
             if answer == 'S':
@@ -270,55 +269,6 @@ def main():
                     print("❌ Wrong answer. Try again or type 's' to skip.")
                     logger.info(f"Question {idx + 1}: Selected: {answer} | Wrong answer")
 
-#            if answer == 'S':
-#                if not attempted:
-#                    global skipped
-#                    skipped += 1
-#                    print("⏭️ Skipped.")
-#                    logger.info(f"Question {idx + 1}: Skipped")
-#                else:
-#                    print("⏭️ Skipped after attempting. Not counted as skipped.")
-#                answered = True
-#
-#            elif answer == q['correct_answer']:
-#                if first_attempt:
-#                    global correct
-#                    correct += 1
-#                    print("✅ Correct on first try!")
-#                    logger.info(f"Question {idx + 1}: Selected: {answer} | Correct on first try")
-#                else:
-#                    global wrong
-#                    if not counted_as_wrong:
-#                        wrong += 1
-#                        counted_as_wrong = True
-#                        wrong_details.append({
-#                            "number": idx + 1,
-#                            "question": q['Question'],
-#                            "correct_answer": q['correct_answer'],
-#                            "explanation": q.get("explanation")
-#                        })
-#                    print("✅ Correct (but not counted as correct – previous wrong attempt)")
-#                    logger.info(f"Question {idx + 1}: Selected: {answer} | Correct after wrong attempt")
-#                answered = True
-#
-#            elif answer in q['alternatives']:
-#                if first_attempt:
-#                    first_attempt = False
-#                if not counted_as_wrong:
-#                    wrong += 1
-#                    counted_as_wrong = True
-#                    wrong_details.append({
-#                        "number": idx + 1,
-#                        "question": q['question'],
-#                        "correct_answer": q['correct_answer'],
-#                        "explanation": q.get("explanation")
-#                    })
-#                attempted = True
-#                print("❌ Wrong answer. Try again or type 's' to skip.")
-#                logger.info(f"Question {idx + 1}: Selected: {answer} | Wrong answer on first try")
-#
-#            else:
-#                print("Invalid input. Please enter A, B, C, D, or 's'.")
 
         explanation = q.get("explanation")
         if explanation:
@@ -330,6 +280,16 @@ def main():
     show_results()
     write_results(quiz_name=quiz_name)
 
+def is_correct_answer(user_input, correct_answer):
+    """
+    Check if user input matches the correct answer.
+    user_input: list of answers (e.g., ['A'] or ['C', 'D'])
+    correct_answer: a string (e.g., 'A') or list (e.g., ['C', 'D'])
+    """
+    if isinstance(correct_answer, list):
+        return sorted(user_input) == sorted(correct_answer)
+    else:
+        return len(user_input) == 1 and user_input[0] == correct_answer
 
 if __name__ == "__main__":
     main()
