@@ -1,0 +1,485 @@
+
+  [
+  {
+    "question_number": 1,
+    "question": "Which of the following BEST explains the relationship between testing and quality assurance?",
+    "alternatives": {
+      "a": "They are the same, both ensuring the product is defect free",
+      "b": "Testing is part of quality assurance",
+      "c": "Quality assurance ensures testing is properly done",
+      "d": "Testing and quality assurance are unrelated disciplines"
+    },
+    "correct_answer": "b",
+    "explanation": "Testing is one activity within quality assurance; QA includes many other activities like process control and improvement."
+  },
+  {
+    "question_number": 2,
+    "question": "Which of the following statements BEST matches the definition of 'exhaustive testing'?",
+    "alternatives": {
+      "a": "Testing all combinations of input values and preconditions",
+      "b": "Testing until all defects are found",
+      "c": "Testing the entire system every time a change is made",
+      "d": "Testing using all the available tools in the organization"
+    },
+    "correct_answer": "a",
+    "explanation": "Exhaustive testing refers to testing all possible combinations of input values and preconditions, which is usually impractical."
+  },
+  {
+    "question_number": 3,
+    "question": "Which of the following is a valid objective of testing?",
+    "alternatives": {
+      "a": "Preventing changes to the code",
+      "b": "Finding defects",
+      "c": "Making sure the software is slow",
+      "d": "Delaying release"
+    },
+    "correct_answer": "b",
+    "explanation": "One of the key objectives of testing is to find defects before the software is released."
+  },
+  {
+    "question_number": 4,
+    "question": "Which of the following statements is CORRECT?",
+    "alternatives": {
+      "a": "A test condition describes the output of a test",
+      "b": "A test case contains expected results",
+      "c": "A test procedure specifies how defects are to be fixed",
+      "d": "A test script must be written in a programming language"
+    },
+    "correct_answer": "b",
+    "explanation": "A test case defines test inputs and expected results, which are used to determine pass/fail."
+  },
+  {
+    "question_number": 5,
+    "question": "Which of the following activities is part of the 'test planning' process?",
+    "alternatives": {
+      "a": "Designing test cases",
+      "b": "Executing tests",
+      "c": "Estimating the test effort",
+      "d": "Logging defects"
+    },
+    "correct_answer": "c",
+    "explanation": "Test planning includes estimating the effort needed, identifying risks, and scheduling resources."
+  },
+  {
+    "question_number": 6,
+    "question": "What is the PRIMARY purpose of regression testing?",
+    "alternatives": {
+      "a": "To test new functionality",
+      "b": "To determine the root cause of defects",
+      "c": "To ensure that changes do not break existing functionality",
+      "d": "To test performance under load"
+    },
+    "correct_answer": "c",
+    "explanation": "Regression testing ensures that new code changes do not negatively affect existing functionality."
+  },
+  {
+    "question_number": 7,
+    "question": "Which of the following is TRUE about test independence?",
+    "alternatives": {
+      "a": "It reduces the need for test documentation",
+      "b": "It ensures developers cannot test their own code",
+      "c": "It improves the objectivity of testing",
+      "d": "It makes testing slower and more expensive"
+    },
+    "correct_answer": "c",
+    "explanation": "Independent testing increases objectivity and helps identify issues the original author may overlook."
+  },
+  {
+    "question_number": 8,
+    "question": "Which of the following is MOST likely to be a benefit of static testing?",
+    "alternatives": {
+      "a": "It finds performance bottlenecks",
+      "b": "It identifies security vulnerabilities at runtime",
+      "c": "It allows early detection of defects before execution",
+      "d": "It reduces the number of test cases needed"
+    },
+    "correct_answer": "c",
+    "explanation": "Static testing includes reviews and static analysis, which can find defects before code is run."
+  },
+  {
+    "question_number": 9,
+    "question": "Which of the following is a KEY difference between white-box and black-box test techniques?",
+    "alternatives": {
+      "a": "Black-box techniques require programming knowledge",
+      "b": "White-box techniques use specifications as the basis",
+      "c": "Black-box techniques do not require knowledge of internal code",
+      "d": "White-box techniques do not require tool support"
+    },
+    "correct_answer": "c",
+    "explanation": "Black-box testing focuses on inputs and outputs based on requirements, not code structure."
+  },{
+    "question_number": 10,
+    "question": "Which of the following BEST describes the relationship between development and testing in a DevOps environment?",
+    "alternatives": {
+      "a": "Testers work separately from developers to ensure independence",
+      "b": "Testers provide documentation for developers to perform testing",
+      "c": "Testing and development are integrated, with frequent collaboration and automation",
+      "d": "Testing is only performed after the development pipeline is completed"
+    },
+    "correct_answer": "c",
+    "explanation": "DevOps encourages tight integration and collaboration between testing and development, often with a high degree of automation."
+  },
+  {
+    "question_number": 11,
+    "question": "Which of the following is the BEST reason to separate test planning and test execution in the test process?",
+    "alternatives": {
+      "a": "To ensure tests are created before any code is written",
+      "b": "To ensure all tests are automated",
+      "c": "To enable better scheduling and control of testing activities",
+      "d": "To assign them to different teams for efficiency"
+    },
+    "correct_answer": "c",
+    "explanation": "Separating test planning from execution allows better organization, resource allocation, and timing across the project lifecycle."
+  },
+  {
+    "question_number": 12,
+    "question": "In which software development lifecycle model is testing typically a distinct phase that occurs after the development phase?",
+    "alternatives": {
+      "a": "V-model",
+      "b": "Agile",
+      "c": "Waterfall",
+      "d": "Spiral"
+    },
+    "correct_answer": "c",
+    "explanation": "In the Waterfall model, development and testing are sequential, with testing occurring after development is completed."
+  },
+  {
+    "question_number": 13,
+    "question": "Which of the following is a benefit of using static testing techniques?",
+    "alternatives": {
+      "a": "They find defects early and reduce the cost of fixing them",
+      "b": "They ensure 100% code coverage",
+      "c": "They replace the need for dynamic testing",
+      "d": "They guarantee defect-free software"
+    },
+    "correct_answer": "a",
+    "explanation": "Static testing, like reviews and static analysis, can catch issues early in the development cycle before code is executed."
+  },
+  {
+    "question_number": 14,
+    "question": "Which of the following is MOST likely to be an objective of testing?",
+    "alternatives": {
+      "a": "To prevent users from accessing the software too early",
+      "b": "To identify and fix all defects in the software",
+      "c": "To assess the quality of the software and identify risks",
+      "d": "To ensure the software performs faster than competitors"
+    },
+    "correct_answer": "c",
+    "explanation": "Testing provides information about the software\u2019s quality and associated risks, which supports decision making."
+  },
+  {
+    "question_number": 15,
+    "question": "Which of the following is a KEY characteristic of a good test case?",
+    "alternatives": {
+      "a": "It is dependent on other test cases",
+      "b": "It includes expected results",
+      "c": "It is long and complex",
+      "d": "It verifies multiple features at once"
+    },
+    "correct_answer": "b",
+    "explanation": "A good test case clearly defines input and expected output, allowing testers to determine pass/fail."
+  },
+  {
+    "question_number": 16,
+    "question": "You are performing a review of a requirements document. Which of the following is a typical checklist item you might use?",
+    "alternatives": {
+      "a": "Ensure test cases exist for every requirement",
+      "b": "Ensure each requirement is uniquely identified and testable",
+      "c": "Ensure the software design is modular",
+      "d": "Ensure sufficient test automation is available"
+    },
+    "correct_answer": "b",
+    "explanation": "Each requirement should be clear, unique, and testable to support quality and verification."
+  },
+  {
+    "question_number": 17,
+    "question": "You are using a tool to support static analysis of source code. What can this tool help you identify?",
+    "alternatives": {
+      "a": "Undocumented features",
+      "b": "Deviations from coding standards",
+      "c": "Performance issues under load",
+      "d": "Security breaches during runtime"
+    },
+    "correct_answer": "b",
+    "explanation": "Static analysis tools help detect issues such as coding standard violations and potential bugs without executing code."
+  },
+  {
+    "question_number": 18,
+    "question": "Which of the following is TRUE about experience-based test techniques?",
+    "alternatives": {
+      "a": "They are always more effective than formal techniques",
+      "b": "They rely on the tester\u2019s knowledge and intuition",
+      "c": "They require extensive documentation",
+      "d": "They can only be used by certified testers"
+    },
+    "correct_answer": "b",
+    "explanation": "Experience-based techniques like exploratory testing use the tester\u2019s background, domain knowledge, and skill."
+  },
+  {
+    "question_number": 19,
+    "question": "Which of the following statements BEST describes the purpose of regression testing?",
+    "alternatives": {
+      "a": "To verify new functionality works correctly",
+      "b": "To verify that changes have not introduced new defects",
+      "c": "To test the performance of the system under load",
+      "d": "To test the system's behavior when integrated with other systems"
+    },
+    "correct_answer": "b",
+    "explanation": "Regression testing ensures that recent changes have not negatively affected existing functionality."
+  },
+  {
+    "question_number": 20,
+    "question": "Customers of the TestWash car wash chain have cards with a record of the number of washes they have bought so far. The initial value is 0. After entering the car wash, the system increases the number on the card by one. This value represents the number of the current wash. Based on this number the system decides what discount the customer is entitled to.\n\nFor every tenth wash the system gives a 10% discount, and for every twentieth wash, the system gives a further 40% discount (i.e., a 50% discount in total).\n\nWhich of the following sets of input data (understood as the numbers of the current wash) achieves the highest equivalence partition coverage?",
+    "alternatives": {
+      "a": "19, 20, 30",
+      "b": "11, 12, 20",
+      "c": "1, 10, 50",
+      "d": "10, 29, 30, 31"
+    },
+    "correct_answer": "d",
+    "explanation": "Option D best covers the equivalence partitions for no discount, 10% discount, and 50% discount."
+  },
+  {
+    "question_number": 21,
+    "question": "You are testing a form that verifies the correctness of the length of the password given as input. The form accepts a password with the correct length and rejects a password that is too short or too long. The password length is correct if it has between 6 and 12 characters inclusive. Otherwise, it is considered incorrect.\n\nAt first, the form is empty (password length = 0). You apply boundary value analysis to the \u201cpassword length\u201d variable.\n\nYour set of test cases achieves 100% 2-value boundary value coverage. The team decided that due to the high risk of this component, test cases should be added to ensure 100% 3-value boundary value coverage.\n\nWhich additional password lengths should be tested to achieve this?",
+    "alternatives": {
+      "a": "4, 5, 13, 14",
+      "b": "7, 11",
+      "c": "1, 5, 13",
+      "d": "1, 4, 7, 11, 14"
+    },
+    "correct_answer": "d",
+    "explanation": "3-value boundary analysis requires one value just below, at, and just above each boundary. Hence the choice: 1, 4, 7, 11, 14."
+  },
+  {
+    "question_number": 22,
+    "question": "The following decision table contains the rules for determining the risk of atherosclerosis.\n\nRule 1 Rule 2 Rule 3 Rule 4 Rule 5\nCholesterol (mg/dl) \u2264124 \u2264124 125\u2013200 125\u2013200 \u2265201\nBlood pressure (mm Hg) \u2264140 >140 \u2264140 >140 \u2013\nAction: very low, low, medium, high, very high\n\nYou designed the test cases with the following test input data:\nTC1: Cholesterol = 125 mg/dl, Blood pressure = 141 mm Hg\nTC2: Cholesterol = 200 mg/dl, Blood pressure = 201 mm Hg\nTC3: Cholesterol = 124 mg/dl, Blood pressure = 201 mm Hg\nTC4: Cholesterol = 109 mg/dl, Blood pressure = 200 mm Hg\nTC5: Cholesterol = 201 mg/dl, Blood pressure = 140 mm Hg\n\nWhat is the decision table coverage achieved by these test cases?",
+    "alternatives": {
+      "a": "40%",
+      "b": "60%",
+      "c": "80%",
+      "d": "100%"
+    },
+    "correct_answer": "c",
+    "explanation": "4 out of 5 rules are covered by the test cases, achieving 80% decision table coverage."
+  },
+  {
+    "question_number": 23,
+    "question": "A storage system can store up to three elements and is modeled by the following state transition diagram. The variable N represents the number of currently stored elements.\n\nWhich of the following test cases, represented as sequences of events, achieves the highest level of valid transitions coverage?",
+    "alternatives": {
+      "a": "Add, Remove, Add, Add, Add",
+      "b": "Add, Add, Add, Add, Remove, Remove",
+      "c": "Add, Add, Add, Remove, Remove",
+      "d": "Add, Add, Add, Remove, Add"
+    },
+    "correct_answer": "b",
+    "explanation": "Option B covers overflow and multiple removals, providing the highest valid transition coverage."
+  },
+  {
+    "question_number": 24,
+    "question": "You run two test cases, T1 and T2, on the same code. Test T1 achieved 40% statement coverage and test T2 achieved 65% statement coverage.\n\nWhich of the following sentences must be necessarily true?",
+    "alternatives": {
+      "a": "The test suite composed with tests T1 and T2 achieves 105% statement coverage",
+      "b": "There exists at least one statement that must have been executed by both T1 and T2",
+      "c": "At least 5% of the statements in the code under test are non-executable",
+      "d": "The test suite composed of tests T1 and T2 achieves full branch coverage"
+    },
+    "correct_answer": "b",
+    "explanation": "Since both tests execute some portion of the code, there's likely overlap; hence at least one statement is shared."
+  },
+  {
+    "question_number": 25,
+    "question": "Let the branch coverage metric be defined as BCov = (X / Y) * 100%.\n\nWhat do X and Y represent in this formula?",
+    "alternatives": {
+      "a": "X = number of decision outcomes exercised by the test cases; Y = total number of decision outcomes in the code",
+      "b": "X = number of conditional branches exercised by the test cases; Y = total number of branches in the code",
+      "c": "X = number of branches exercised by the test cases; Y = total number of branches in the code",
+      "d": "X = number of conditional branches exercised by the test cases; Y = total number of decision outcomes in the code"
+    },
+    "correct_answer": "c",
+    "explanation": "Branch coverage is defined as the number of executed branches over total branches."
+  },
+  {
+    "question_number": 26,
+    "question": "Which TWO of the following statements provide the BEST rationale for using exploratory testing?",
+    "alternatives": {
+      "a": "Testers have not been allocated enough time for test design and test execution",
+      "b": "The existing test strategy requires that testers use formal, black-box test techniques",
+      "c": "The specification is written in a formal language that can be processed by a tool",
+      "d": "Testers are the members of an agile team and have good programming skills",
+      "e": "Testers are experienced in the business domain and have good analytical skills"
+    },
+    "correct_answer": [
+      "d",
+      "e"
+    ],
+    "explanation": "Exploratory testing is most effective when testers are experienced in the domain and have the ability to think critically and explore creatively."
+  },
+  {
+    "question_number": 27,
+    "question": "Which of the following BEST fits as an element of the checklist used in checklist-based testing?",
+    "alternatives": {
+      "a": "The developer made an error when implementing the code",
+      "b": "The achieved statement coverage exceeds 85%",
+      "c": "The program works correctly regarding functional and non-functional requirements",
+      "d": "The error messages are written in language that the user can understand"
+    },
+    "correct_answer": "d",
+    "explanation": "Checklist-based testing often includes checks for usability and user-facing aspects such as understandable error messages."
+  },
+  {
+    "question_number": 28,
+    "question": "Consider the following acceptance criteria for a user story written from the perspective of an online store owner:\nGiven that the user is logged in and on the homepage,\nWhen the user clicks on the \"Add Item\" button,\nThen the \"Create Item\" form should appear,\nAnd the user should be able to input a name and price for the new item.\n\nIn what format is this acceptance criteria written?",
+    "alternatives": {
+      "a": "Rule-oriented",
+      "b": "Scenario-oriented",
+      "c": "Product-oriented",
+      "d": "Process-oriented"
+    },
+    "correct_answer": "b",
+    "explanation": "This is written in a Given-When-Then format typical of scenario-based acceptance criteria (e.g., BDD style)."
+  },
+  {
+    "question_number": 29,
+    "question": "Your team analyzes the following user story in order to define the acceptance criteria:\nAs a registered customer, I want to be able to view my previous orders on the company's website, so that I can keep track of my purchases.\n\nWhich of the following test cases will NOT be relevant for this user story?",
+    "alternatives": {
+      "a": "Input: the customer logs into their account and clicks \u201csee order history\u201d; Expected output: previous orders are listed",
+      "b": "Input: the customer clicks on an order; Expected output: item details and quantities are shown",
+      "c": "Input: the customer clicks \u201cSort ascending\u201d; Expected output: orders are sorted by order number",
+      "d": "Input: an unregistered customer registers with a valid email; Expected output: account is created"
+    },
+    "correct_answer": "d",
+    "explanation": "The user story is about viewing past orders as a registered customer. Registration flow is outside the scope."
+  },{
+    "question_number": 30,
+    "question": "Your team follows the process that uses the DevOps delivery pipeline. The first three steps of this process are:\n(1) Code development\n(2) Submit code into a version control system and merge it into the \u201ctest\u201d branch\n(3) Perform component testing for the submitted code\nWhich of the following is BEST suited to be the entry criterion for step (2) of this pipeline?",
+    "alternatives": {
+      "a": "Static analysis returns no high severity warnings for the submitted code",
+      "b": "System version control reports no conflicts when merging code into the \u201ctest\u201d branch",
+      "c": "Component tests are compiled and ready to be executed",
+      "d": "Statement coverage is at least 80%"
+    },
+    "correct_answer": "a",
+    "explanation": "Static analysis before merging code helps ensure quality and prevents issues downstream, making it an appropriate entry criterion."
+  },
+  {
+    "question_number": 31,
+    "question": "You want to estimate the test effort for the new project using estimation based on ratios. You calculate the test-to-development effort ratio using averaged data for both development effort and test effort from four historical projects similar to the new one. The table shows this historical data.\nP1: 800,000 (dev), 40,000 (test)\nP2: 1,200,000 (dev), 130,000 (test)\nP3: 600,000 (dev), 70,000 (test)\nP4: 1,000,000 (dev), 120,000 (test)\nThe estimated development effort for the new project is $800,000. What is your estimate of the test effort in this project?",
+    "alternatives": {
+      "a": "$40,000",
+      "b": "$80,000",
+      "c": "$81,250",
+      "d": "$82,500"
+    },
+    "correct_answer": "c",
+    "explanation": "Average test-to-development ratio = (40+130+70+120)/(800+1200+600+1000) = 360/3600 = 0.1; test effort = 800,000 * 0.1015625 = $81,250."
+  },
+  {
+    "question_number": 32,
+    "question": "You are testing a web application that allows users to SEARCH for products, VIEW product details, ADD products to a shopping cart, and place an ORDER. You prepared 7 test cases with different priorities and dependencies. Which test case should be executed as the fourth one?",
+    "alternatives": {
+      "a": "TC3",
+      "b": "TC1",
+      "c": "TC7",
+      "d": "TC2"
+    },
+    "correct_answer": "a",
+    "explanation": "The order must follow dependency: SEARCH -> VIEW -> ADD -> ORDER. TC3 is the fourth test after covering initial steps."
+  },
+  {
+    "question_number": 33,
+    "question": "According to the testing quadrants model, which of the following falls into quadrant Q1 (\u201ctechnology facing\u201d and \u201csupport the team\u201d)?",
+    "alternatives": {
+      "a": "Usability testing",
+      "b": "Functional testing",
+      "c": "User acceptance testing",
+      "d": "Component integration testing"
+    },
+    "correct_answer": "d",
+    "explanation": "Q1 is technology-facing and supports the team; unit and component integration tests are typical here."
+  },
+  {
+    "question_number": 34,
+    "question": "Given a set of risks and mitigation strategies, match them: 1. Ineffective loop \u2192 ?, 2. Consumer preference \u2192 ?, 3. Server room flood \u2192 ?, 4. Elderly patients \u2192 ?",
+    "alternatives": {
+      "a": "1C, 2D, 3A, 4B",
+      "b": "1B, 2D, 3A, 4C",
+      "c": "1B, 2A, 3D, 4C",
+      "d": "1C, 2A, 3D, 4B"
+    },
+    "correct_answer": "b",
+    "explanation": "1: Performance testing (B), 2: Risk transfer (D), 3: Acceptance (A), 4: Boundary value analysis (C)"
+  },
+  {
+    "question_number": 35,
+    "question": "Which of the following is a product quality metric?",
+    "alternatives": {
+      "a": "Mean time to failure",
+      "b": "Number of defects found",
+      "c": "Requirements coverage",
+      "d": "Defect detection percentage"
+    },
+    "correct_answer": "a",
+    "explanation": "Mean time to failure measures reliability and is directly related to product quality."
+  },
+  {
+    "question_number": 36,
+    "question": "Which of the following is the LEAST effective way to communicate test progress to the customer, given distributed agile DevOps teams?",
+    "alternatives": {
+      "a": "Face-to-face",
+      "b": "Dashboards",
+      "c": "Email",
+      "d": "Video conferencing"
+    },
+    "correct_answer": "a",
+    "explanation": "Face-to-face is not practical for distributed teams; other methods scale better."
+  },
+  {
+    "question_number": 37,
+    "question": "Which of the following BEST describes an example of how configuration management (CM) supports testing?",
+    "alternatives": {
+      "a": "Having the version number of the environment, the CM tool can retrieve the version numbers of libraries, stubs and drivers used in that environment",
+      "b": "Having a record of the values of the test inputs, the CM tool can execute the test cases for these configurations and calculate test coverage",
+      "c": "Having data about the date of purchase of a software license, the CM tool automatically generates information about the fact that the product license is coming to an end",
+      "d": "Having the version number of the test case, the CM tool can automatically generate test data for this test case"
+    },
+    "correct_answer": "a",
+    "explanation": "CM helps trace and reproduce environments by tracking versions, which is key to test reproducibility."
+  },
+  {
+    "question_number": 38,
+    "question": "You are testing a sort function. The logs indicate TC3, TC4, and TC5 fail when there are duplicate values. What is the best description for a defect report?",
+    "alternatives": {
+      "a": "The system fails to sort several sets of numbers. Reference: TC3, TC4, TC5.",
+      "b": "The system seems to disregard duplicates while sorting. Reference: TC3, TC4, TC5.",
+      "c": "The system fails to sort negative numbers. Reference: TC4, TC5.",
+      "d": "TC3, TC4 and TC5 have defects (duplicate input data) and should be corrected."
+    },
+    "correct_answer": "b",
+    "explanation": "The test log shows missing duplicates in output, which implies the system removes them during sorting."
+  },
+  {
+    "question_number": 39,
+    "question": "Match the tool description with the correct tool category: 1. Support workflow tracking, 2. Facilitate communication, 3. Virtual machines, 4. Support reviews.",
+    "alternatives": {
+      "a": "1A, 2B, 3C, 4D",
+      "b": "1B, 2D, 3C, 4A",
+      "c": "1C, 2D, 3B, 4A",
+      "d": "1D, 2C, 3A, 4B"
+    },
+    "correct_answer": "b",
+    "explanation": "1=workflow \u2192 B (scalability), 2=communication \u2192 D (collaboration), 3=VMs \u2192 C (DevOps), 4=reviews \u2192 A (static tools)"
+  },
+  {
+    "question_number": 40,
+    "question": "Which of the following is MOST likely to be a benefit of test automation?",
+    "alternatives": {
+      "a": "It provides coverage measures that are too complicated for humans to derive",
+      "b": "It shares responsibility for the testing with the tool vendor",
+      "c": "It removes the need for critical thinking when analyzing test results",
+      "d": "It generates test cases from an analysis of the program code"
+    },
+    "correct_answer": "a",
+    "explanation": "Automated tools can calculate complex coverage metrics not easily derived manually."
+  }
+]
